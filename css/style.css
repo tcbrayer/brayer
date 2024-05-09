@@ -532,6 +532,7 @@
     .menu.show {
         transform: translateX(0%);
         display: flex;
+        z-index: 999999;
     }
     .menu-toggle {
         position: fixed;
