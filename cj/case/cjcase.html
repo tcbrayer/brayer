@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+    <head>
+              <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-T6YZ830185');
+        </script>
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="google.com">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="http://brayer.website/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
+        <title>Brayer . Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <meta name="description" content="Brayer . Portfolio">
+        <meta name="author" content="WikevGame">
+    
+        <style>
+            @media (max-width: 600px) {
+                body {        
+                    display: none;
+                }
+            }
+            @media (min-width: 601px) {
+            body {
+                background-color: #0F1923;
+            }
+            .principal img {
+                width: 100%;
+                height: auto;
+            }
+            .principal2 img {
+                width: 80vw;
+                height: auto;
+                margin-top: 10vw;
+                margin-block-end: 4vw;
+            }
+            .principal2 {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+            }
+            .titulo1 {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .titulo1 h3{
+                color: white;
+                font-size: 2.5vw;
+                font-style: normal;
+                font-weight: 300;
+                text-align: center;
+                margin-left: 0vw;
+                margin-top: 9vw;
+                margin-block-end: -7vw;
+            }
+            .principal23 {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                flex-direction: column;
+            }
+            .principal23 h3{
+                color: white;
+                font-size: 2.5vw;
+                font-style: normal;
+                font-weight: 300;
+                margin-top: 12vw;
+                margin-block-end: 0vw;
+                text-align: right;
+                margin-right: 8.5vw;
+            }
+            .principal23 img {
+                width: 86vw;
+                height: auto;
+                margin-left: 7vw;
+                border-radius: 1vw;
+                margin-top: -3vw;
+            }
+            .containerscroll {
+                overflow: hidden;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                position: absolute;
+                top: 27vw;
+                width: 100%;
+                height: auto;
+            }
+            .container3 {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row-reverse;
+                position: initial;
+                align-items: stretch;
+                justify-content: space-evenly;
+                margin-top: -10vw;
+            }
+            
+            #scrollImage {
+                width: 80vw;
+                height: auto;
+                transition: transform 0.5s;
+                padding-top: 12vw;
+                padding-block-end: 12vw;
+            }
+            .containerscroll2 {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+  
+            #scrollImage2 {
+                width: 100%;
+                height: auto;
+                transition: transform 0.5s;
+            }
+            .servico1 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                margin-left: 4.5vw;
+                margin-right: 5.5vw;
+                margin-top: 17vw;
+            }
+            .imagedesk123 img {
+                width: 38vw;
+                height: auto;
+                margin-left: 8vw;
+            }
+            .imagemom {
+                width: auto;
+                display: flex;
+                flex-direction: row;
+                padding-right: 0.5vw;
+                margin-top: 17vw;
+            }
+            .imagedesk123,
+            .imagedesk12,
+            .imagedesk13 {
+                flex: 1;
+            }
+            .imagedesk123 img,
+            .imagedesk12 img,
+            .imagedesk13 img {
+                
+                transition: transform 0.3s;
+            }
+            .imagedesk123 img:hover,
+            .imagedesk12 img:hover,
+            .imagedesk13 img:hover {
+                transform: scale(1.3);
+            }
+            .imagedesk12 img {
+                width: 48vw;
+                height: auto;
+                margin-left: 9vw;
+                border-radius: 1vw;
+            }
+            h3 {
+                color: white;
+                margin-left: 10vw;
+                font-size: 2.5vw;
+                font-style: normal;
+                font-weight: 300;
+                margin-top: 0.5vw;
+                margin-block-end: 0vw;
+            }
+            .imagedesk13 h3 {
+                color: white;
+                margin-left: 11vw;
+                font-size: 2.5vw;
+                font-style: normal;
+                font-weight: 300;
+                margin-top: 0.5vw;
+                margin-block-end: 0vw;
+            }
+            .texto4 h3 {
+                color: white;
+                font-size: 2.5vw;
+                font-style: normal;
+                font-weight: 300;
+                margin-top: 0.5vw;
+                margin-block-end: 0vw;
+                text-align: right;
+                margin-right: 8vw;
+            }
+            .texto4 h2 {
+                color: #ffffff;
+                text-align: justify;
+                font-size: 1.8vw;
+                font-style: normal;
+                font-weight: 300;
+                padding-right: 8vw;
+                margin-block-end: 2vw;
+                margin-left: 2vw;
+                line-height: 1.5;
+            }
+            .texto5 h2 {
+                color: #ffffff;
+                text-align: justify;
+                font-size: 1.8vw;
+                font-style: normal;
+                font-weight: 300;
+                padding-left: 10vw;
+                margin-block-end: 2vw;
+                margin-right: 2vw;
+                line-height: 1.5;
+            }
+            .texto7 h2 {
+                color: #ffffff;
+                text-align: justify;
+                font-size: 1.8vw;
+                font-style: normal;
+                font-weight: 300;
+                margin-block-end: 2vw;
+                margin-left: 12vw;
+                line-height: 1.5;
+                margin-right: 43vw;
+                margin-top: -23vw;
+            }
+            .texto6 h2 {
+                color: #ffffff;
+                text-align: justify;
+                font-size: 1.8vw;
+                font-style: normal;
+                font-weight: 300;
+                margin-block-end: 2vw;
+                margin-left: 57vw;
+                line-height: 1.5;
+                margin-right: 1vw;
+                margin-top: 16vw;
+            }
+            .texto8 {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .texto8 h2 {
+                color: #ffffff;
+                text-align: justify;
+                font-size: 1.8vw;
+                font-style: normal;
+                font-weight: 300;
+                margin-block-end: 7vw;
+                margin-left: 10vw;
+                line-height: 1.5;
+                margin-right: 10vw;
+                margin-top: -2vw;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <top>
+                <div class="logo">
+                    <a href="http://brayer.website/">
+                        <img src="http://brayer.website/img/logo.png" alt="Logo do site">
+                    </a>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </top>
+            <div class="top-bar"></div>
+            <div class="menu" id="menu">
+                <div class="menu-open-icon" onclick="toggleMenu()"></div>
+                <div class="menu-close-icon" onclick="toggleMenu()"></div>
+                <ul>
+                    <a href="http://brayer.website/">
+                        <li><img src="https://bestporn.cloud/icon/cup-straw.png" alt="Icon 1"> Home</li>
+                    </a>
+                    <a href="http://brayer.website/sobre">
+                        <li><img src="https://bestporn.cloud/icon/heart.png" alt="Icon 2"> Sobre</li>
+                    </a>
+                    <a href="http://brayer.website/contato">
+                        <li><img src="https://bestporn.cloud/icon/list-check.png" alt="Icon 4"> Contato</li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thiago-brayer-2ba095a3/">
+                        <li><img src="http://brayer.website/img/linkedin.png" alt="Icon 3"></li>
+                    </a>
+                    
+                </ul>
+            </div>
+            <div class="principal">
+                
+                <img src="http://brayer.website/img/banner-principal.png" alt="Sobre" >
+            </div>
+            <div class="containerscroll">
+                <img id="scrollImage" src="http://brayer.website/img/quadrados.png" alt="Scrolling Image">
+            </div>
+            
+            
+            <div class="container">
+                <!-- Imagem do lado direito -->
+                <div class="imagemom">
+                    <div class="imagedesk12">
+                        <h3>Os Problemas</h3>
+                        
+                        <img src="http://brayer.website/img/cjantigo.png" alt="CJ Esquerda">
+                    </div>
+                    <div class="layout-texto">
+                        
+                        <div class="texto4">
+                            <h2>O antigo Click Jogos enfrentava diversos problemas, sendo os principais um sistema de gerenciamento de conteúdo desatualizado, uma excessiva quantidade de propagandas que prejudicava a experiência de uso, resultando em dificuldades para jogar, além de um tempo médio de visita muito reduzido e a obsolescência do Flash provocou a inoperância da maioria dos jogos disponíveis no site.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <!-- Imagem do lado direito -->
+                <div class="imagemom2">
+                    <div class="imagedesk13">
+                        
+                            <img src="http://brayer.website/img/jogos.png" alt="CJ Esquerda">
+                        </div>
+                        
+                    </div>
+                    <div class="layout-texto">
+                        <div class="texto5">
+                            <h3>Solução</h3>
+                            <h2>Fizemos um extenso trabalho de descoberta do produto para entender melhor os usuários e, em seguida, redesenhar completamente o site. Isso incluiu a criação de um novo CMS e um novo layout, além da escolha cuidadosa de jogos em HTML5 para garantir que todos os jogos funcionassem perfeitamente. Também foi dada especial atenção ao design para a versão mobile, com botões maiores para facilitar o acesso de crianças menores.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="principal2">
+                
+                <img src="http://brayer.website/img/cjnew.png" alt="Sobre" >
+            </div>
+
+            <div class="container3">
+                <!-- Imagem do lado direito -->
+                <div class="imagemom">
+                    <div class="imagedesk123">
+                        
+                        
+                        <img src="http://brayer.website/img/jogos2.png" alt="CJ Esquerda">
+                    </div>
+                    <div class="layout-texto">
+                        
+                        <div class="texto4">
+                            <h3>Novos Jogos</h3>
+                            <h2>O novo site foi projetado para atender aos usuários recorrentes, com destaque para os jogos mais populares na primeira página. Isso tornou mais fácil para os usuários encontrarem os jogos que desejam jogar.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principal23">
+                <h3>Aprimoramento</h3>
+                <img src="http://brayer.website/img/amazonpwa.png" alt="Sobre" >
+            </div>
+            <div class="layout-texto">
+                        
+                <div class="texto7">
+                    
+                    <h2>Para entregar uma maior receita, nos juntamos a parceiros para vendas através do site com produtos destinados aos usuários</h2>
+                </div>
+                <div class="texto6">
+                    
+                    <h2>Foi criado um PWA para fornecer uma experiência de usuário aprimorada e eficiente.</h2>
+                </div>
+            </div>
+            <div class="titulo1">
+                <h3>Resultado das ações</h3>
+            </div>
+            <div class="principal2">
+                
+                <img src="http://brayer.website/img/grafico.png" alt="Sobre" >
+            </div>
+            <div class="texto8">
+                    
+                <h2>Essas mudanças resultaram em um aumento significativo na receita do site em comparação com o antigo, bem como um aumento na média de tempo de visita dos usuários para mais de 9 minutos, demonstrando a eficácia do novo layout e gerenciamento de jogos.</h2>
+            </div>
+            
+            <div class="sobre">
+                <a href="http://brayer.website/">
+                <img src="http://brayer.website/img/voltardesk.png" alt="Sobre" ></a>
+            </div>
+            <div class="sobremob">
+                <a href="http://brayer.website/">
+                <img src="http://brayer.website/img/voltarmob.png" alt="Sobre" ></a>
+            </div>
+
+            <div class="block">
+                <a href="https://www.linkedin.com/in/thiago-brayer-2ba095a3/" target="_blank">
+                    <img src="http://brayer.website/img/linkedin.png" alt="LoG Direita"></a>
+            </div>
+            
+            <footer>
+                <p>thiagocbrayer@gmail.com  © COPYRIGHT 2023 - brayer . portfolio</p>
+            </footer>
+
+        </main>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                var isOpen = menu.classList.contains("show");
+                if (isOpen) {
+                    menu.classList.remove("show"); // Remove a classe "show" para ocultar o menu
+                    document.body.classList.remove("menu-close-icon");
+                } 
+                else {
+                    menu.classList.add("show"); // Adiciona a classe "show" para mostrar o menu
+                    document.body.classList.add("menu-open-icon");
+                }
+            }
+            let isDragging = false;
+let startPosition = 0;
+let startScrollLeft = 0;
+
+const scrollContainer = document.querySelector('.scroll-container');
+const lineCategory = document.querySelector('.line-category');
+
+lineCategory.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startPosition = e.clientX;
+  startScrollLeft = scrollContainer.scrollLeft;
+  lineCategory.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  lineCategory.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const dx = e.clientX - startPosition;
+    scrollContainer.scrollLeft = startScrollLeft - dx;
+  }
+});
+
+rightImages.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startPosition = e.clientX;
+  startScrollLeft = apps.scrollLeft;
+  rightImages.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  rightImages.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const dx = e.clientX - startPosition;
+    apps.scrollLeft = startScrollLeft - dx;
+  }
+});
+
+lineImages.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startPosition = e.clientX;
+  startScrollLeft = lineImages.scrollLeft;
+  lineImage.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  lineImage.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const dx = e.clientX - startPosition;
+    lineImages.scrollLeft = startScrollLeft - dx;
+  }
+});
+
+
+        </script>
+        
+        <script>
+            const scrollImage = document.getElementById('scrollImage');
+          
+            window.addEventListener('scroll', () => {
+              const scrollPosition = window.scrollY;
+              const windowHeight = window.innerHeight;
+          
+              // Define o ponto de início e fim da animação
+              const startAnimation = 0; // Começa a animação desde o topo
+              const endAnimation = windowHeight / 2;
+          
+              // Calcula a escala da imagem com base na posição de rolagem
+              const scale = 1 + (scrollPosition - startAnimation) / (endAnimation - startAnimation);
+          
+              // Limita a escala mínima para evitar que a imagem diminua demais
+              const minScale = 1;
+              const maxScale = 2;
+          
+              // Aplica a escala à imagem
+              scrollImage.style.transform = `scale(${Math.min(maxScale, Math.max(minScale, scale))})`;
+            });
+          </script>
+          
+           
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/csv-parser/dist/csv-parser.min.js"></script>
+        <script src="scriptcategorias.js"></script>    
+    </body>
+</html>

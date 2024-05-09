@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+              <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-T6YZ830185');
+        </script>
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="google.com">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="http://brayer.website/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
+        <title>Brayer . Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <meta name="description" content="Brayer . Portfolio">
+        <meta name="author" content="WikevGame">
+    
+    </head>
+    <body>
+        <main>
+            <top>
+                <div class="logo">
+                    <a href="http://brayer.website/">
+                        <img src="http://brayer.website/img/logo.png" alt="Logo do site">
+                    </a>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </top>
+            <div class="top-bar"></div>
+            <div class="menu" id="menu">
+                <div class="menu-open-icon" onclick="toggleMenu()"></div>
+                <div class="menu-close-icon" onclick="toggleMenu()"></div>
+                <ul>
+                    <a href="http://brayer.website/">
+                        <li><img src="https://bestporn.cloud/icon/cup-straw.png" alt="Icon 1"> Home</li>
+                    </a>
+                    <a href="http://brayer.website/sobre">
+                        <li><img src="https://bestporn.cloud/icon/heart.png" alt="Icon 2"> Sobre</li>
+                    </a>
+                    <a href="http://brayer.website/contato">
+                        <li><img src="https://bestporn.cloud/icon/list-check.png" alt="Icon 4"> Contato</li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thiago-brayer-2ba095a3/">
+                        <li><img src="http://brayer.website/img/linkedin.png" alt="Icon 3"></li>
+                    </a>
+                    
+                </ul>
+            </div>
+            <div class="texto-inicial">
+                <p>Sobre mim</p>
+            </div>
+            <div class="layout-texto">
+                <div class="texto3">
+                    <h2>Product Manager com mais de 10 anos de experiência em inovação, SEO, tecnologia e UX/UI. Colaborei com empresas de renome, como Kaspersky, Dell, 99, Wap, Nike CH, Waaw, Click Jogos, Baixaki, Tecmundo, entre outras, otimizando receitas e impulsionando o crescimento.</h2>
+                    <h2>Destaco a construção de produtos do zero, resolvendo desafios reais dos usuários, e a descoberta de insights que geraram receita adicional de 500K/ano. Identifiquei e corrigi uma jornada que evitava a perda de mais de 200K usuários inscritos.</h2>
+                    <h2>Expert na construção estratégica, definição e validação de jornadas e funcionalidades de produtos junto aos usuários e stakeholders. Minhas experiências abrangem segmentos como B2B, B2C, B2B2C, D2C e SaaS, capacitando-me a compreender e atender às necessidades específicas de cada setor de forma personalizada.</h2>
+                    <h2>Proficiente em ferramentas como Semrush, Clickup, Figma, GA4, além de conhecimento prático em linguagens como HTML, JavaScript, CSS, e especialização em tecnologias como React JS, Node JS, React Native e C#. Minha abordagem hands-on e criativa visa aprimorar continuamente a experiência do usuário e impulsionar resultados de negócios de maneira eficaz.</h2>
+                </div>
+            </div>
+            <div class="sobre">
+                <a href="http://brayer.website/">
+                <img src="http://brayer.website/img/voltardesk.png" alt="Sobre" ></a>
+            </div>
+            <div class="sobremob">
+                <a href="http://brayer.website/">
+                <img src="http://brayer.website/img/voltarmob.png" alt="Sobre" ></a>
+            </div>
+            
+
+
+            <div class="block">
+                <a href="https://www.linkedin.com/in/thiagobrayer/" target="_blank">
+                    <img src="http://brayer.website/img/linkedin.png" alt="LoG Direita"></a>
+            </div>
+            
+            <footer>
+                <p>thiagocbrayer@gmail.com  © COPYRIGHT 2023 - brayer . portfolio</p>
+            </footer>
+
+        </main>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                var isOpen = menu.classList.contains("show");
+                if (isOpen) {
+                    menu.classList.remove("show"); // Remove a classe "show" para ocultar o menu
+                    document.body.classList.remove("menu-close-icon");
+                } 
+                else {
+                    menu.classList.add("show"); // Adiciona a classe "show" para mostrar o menu
+                    document.body.classList.add("menu-open-icon");
+                }
+            }
+            let isDragging = false;
+let startPosition = 0;
+let startScrollLeft = 0;
+
+const scrollContainer = document.querySelector('.scroll-container');
+const lineCategory = document.querySelector('.line-category');
+
+lineCategory.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startPosition = e.clientX;
+  startScrollLeft = scrollContainer.scrollLeft;
+  lineCategory.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  lineCategory.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const dx = e.clientX - startPosition;
+    scrollContainer.scrollLeft = startScrollLeft - dx;
+  }
+});
+
+rightImages.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startPosition = e.clientX;
+  startScrollLeft = apps.scrollLeft;
+  rightImages.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  rightImages.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const dx = e.clientX - startPosition;
+    apps.scrollLeft = startScrollLeft - dx;
+  }
+});
+
+lineImages.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startPosition = e.clientX;
+  startScrollLeft = lineImages.scrollLeft;
+  lineImage.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  lineImage.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const dx = e.clientX - startPosition;
+    lineImages.scrollLeft = startScrollLeft - dx;
+  }
+});
+
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/csv-parser/dist/csv-parser.min.js"></script>
+        <script src="scriptcategorias.js"></script>    
+    </body>
+</html>
