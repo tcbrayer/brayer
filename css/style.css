@@ -36,12 +36,11 @@
     }
     .texto-inicial p {
         color: #000;
-        text-align: justify;
+        text-align: center;
         font-size: 5vw;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        margin-left: 10vw;
         margin-top: 14vw;
         letter-spacing: 0.5vw;
         
