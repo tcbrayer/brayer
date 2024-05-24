@@ -13,7 +13,9 @@
             font-family: 'Jost', sans-serif;
             flex-direction: column;
             align-items: center;
-            margin: 20px;
+            position: fixed;
+            margin-left: 50vw;
+            margin-top: 3vw;
         }
 
         #drawingCanvas {
@@ -47,7 +49,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 73vh;
+            margin-top: 75vh;
             flex-direction: row;
             flex-wrap: wrap;
             position: fixed;
@@ -95,6 +97,10 @@
             background-image: url('app/linha_media.png');
         }
 
+        .controls button#eraser {
+            background-image: url('app/borracha.png');
+        }
+        
         .controls button#thick {
             background-image: url('app/linha_grossa.png');
         }
@@ -141,6 +147,7 @@
         <button id="colorPicker" class="color-picker">
             <input type="color" id="colorInput" value="#000000">
         </button>
+        <button id="eraser"></button>
         <button id="printCanvas"></button>
         <button id="clearCanvas"></button>
         
@@ -160,6 +167,7 @@
         const thickBtn = document.getElementById('thick');
         const colorPicker = document.getElementById('colorPicker');
         const colorInput = document.getElementById('colorInput');
+        const eraserBtn = document.getElementById('eraser');
         const clearCanvasBtn = document.getElementById('clearCanvas');
         const printCanvasBtn = document.getElementById('printCanvas');
         const cameraSound = document.getElementById('cameraSound');
@@ -239,6 +247,12 @@
             isErasing = false;
             eraserBtn.classList.remove('active');
             colorPicker.style.backgroundColor = brushColor; // Atualiza a cor de fundo do botão de visualização de cor
+        });
+
+        // Eraser button
+        eraserBtn.addEventListener('click', () => {
+            isErasing = true;
+            setActiveButton(eraserBtn);
         });
 
         // Clear canvas button
