@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Desenho</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background-color: #E78055;
+            font-family: 'Jost', sans-serif;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        #drawingCanvas {
+            height: 70vh;
+            width: 100%;
+            max-width: 600px; /* Largura máxima */
+            background-color: #ffffff00;
+            margin: 0vw;
+            border-radius: 30px;
+            border: 14px solid #00c7ff;
+        } 
+
+        .letras {
+            z-index: -1;
+            position: fixed;
+            height: 70vh;
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            background-image: url(app/a.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0vw;
+            border-radius: 30px;
+            border: 14px solid #00c7ff;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .controls button, .controls input[type="color"] {
+            margin: 5px 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .controls button.color-picker {
+            width: 75px;
+            height: 50px;
+            background-color: #000000; /* Cor inicial do botão */
+            position: relative;
+        }
+
+        .controls input[type="color"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0; /* Tornar o input invisível */
+            cursor: pointer;
+        }
+
+        .controls button {
+            width: 75px; /* Defina a largura desejada */
+            height: 50px; /* Defina a altura desejada */
+            background-size: cover; /* Ajusta a imagem ao tamanho do botão */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .controls button#thin {
+            background-image: url('app/linha_fina.png');
+        }
+
+        .controls button#medium {
+            background-image: url('app/linha_media.png');
+        }
+
+        .controls button#thick {
+            background-image: url('app/linha_grossa.png');
+        }
+
+        .controls button#clearCanvas {
+            background-image: url('app/apagar.png');
+        }
+
+        .controls button#printCanvas {
+            background-image: url('app/print.png');
+        }
+
+        .controls button#muteMusic {
+            background-image: url('app/mute.png');
+        }
+
+        .controls button.active {
+            box-shadow: 0 0 5px #46c2f3; /* Destaque para o botão ativo */
+        }
+
+        .background {
+            position: fixed;
+            width: auto;
+            height: auto;
+            z-index: -10;
+        }
+
+        .background img {
+            position: fixed;
+            width: 121vw;
+            margin-left: -53vw;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"><img src="app/fundo.png"></div>
+    <div class="letras"></div>
+    <canvas id="drawingCanvas"></canvas>
+    <div class="controls">
+        <button id="thin" class="active"></button>
+        <button id="medium"></button>
+        <button id="thick"></button>
+        <button id="colorPicker" class="color-picker">
+            <input type="color" id="colorInput" value="#000000">
+        </button>
+        <button id="printCanvas"></button>
+        <button id="clearCanvas"></button>
+        
+    </div>
+
+    
+    <audio id="cameraSound" src="sound/camera.mp3"></audio>
+
+    <!-- Adicionando a biblioteca html2canvas -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+
+    <script>
+        const canvas = document.getElementById('drawingCanvas');
+        const ctx = canvas.getContext('2d');
+        const thinBtn = document.getElementById('thin');
+        const mediumBtn = document.getElementById('medium');
+        const thickBtn = document.getElementById('thick');
+        const colorPicker = document.getElementById('colorPicker');
+        const colorInput = document.getElementById('colorInput');
+        const clearCanvasBtn = document.getElementById('clearCanvas');
+        const printCanvasBtn = document.getElementById('printCanvas');
+        const cameraSound = document.getElementById('cameraSound');
+
+        let drawing = false;
+        let brushSize = 2;
+        let brushColor = '#000000';
+        let isErasing = false;
+
+        
+
+        
+
+        // Resize canvas to fit the container
+        function resizeCanvas() {
+            const { width, height } = canvas.getBoundingClientRect();
+            canvas.width = width;
+            canvas.height = height;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Function to start drawing
+        function startDrawing(e) {
+            drawing = true;
+            draw(e);
+        }
+
+        // Function to stop drawing
+        function stopDrawing() {
+            drawing = false;
+            ctx.beginPath();
+        }
+
+        // Function to draw
+        function draw(e) {
+            if (!drawing) return;
+            ctx.lineWidth = brushSize;
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = isErasing ? '#ffffff' : brushColor;
+
+            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        }
+
+        // Event listeners for mouse events
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mousemove', draw);
+
+        // Event listeners for touch events
+        canvas.addEventListener('touchstart', (e) => startDrawing(e.touches[0]));
+        canvas.addEventListener('touchend', stopDrawing);
+        canvas.addEventListener('touchmove', (e) => draw(e.touches[0]));
+
+        // Brush size buttons
+        thinBtn.addEventListener('click', () => {
+            brushSize = 2;
+            setActiveButton(thinBtn);
+        });
+
+        mediumBtn.addEventListener('click', () => {
+            brushSize = 5;
+            setActiveButton(mediumBtn);
+        });
+
+        thickBtn.addEventListener('click', () => {
+            brushSize = 10;
+            setActiveButton(thickBtn);
+        });
+
+        // Color picker
+        colorInput.addEventListener('input', (e) => {
+            brushColor = e.target.value;
+            isErasing = false;
+            eraserBtn.classList.remove('active');
+            colorPicker.style.backgroundColor = brushColor; // Atualiza a cor de fundo do botão de visualização de cor
+        });
+
+        // Clear canvas button
+        clearCanvasBtn.addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        // Print canvas button
+        printCanvasBtn.addEventListener('click', () => {
+            cameraSound.play();
+            html2canvas(canvas).then(canvas => {
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = 'Print_Jogo_Escrever.png';
+                link.click();
+            });
+        });
+
+        // Function to set active button
+        function setActiveButton(button) {
+            const buttons = document.querySelectorAll('.controls button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        }
+    </script>
+</body>
+</html>
