@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -268,7 +268,6 @@
                 link.href = canvas.toDataURL('image/jpg');
                 link.download = 'Print_Jogo_Escrever.jpg';
                 link.click();
-                saveToGallery(canvas.toDataURL('image/jpg'));
             });
         });
 
@@ -287,15 +286,8 @@
             colorPicker.style.backgroundColor = brushColor; // Atualiza a cor de fundo do botão de visualização de cor
             setActiveButton(thinBtn);
         }
-
-        // Function to save image to gallery
-        function saveToGallery(dataUrl) {
-            const link = document.createElement('a');
-            link.href = dataUrl;
-            link.download = 'drawing.png';
-            link.click();
-        }
     </script>
 </body>
 </html>
+
 
