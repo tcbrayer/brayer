@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Desenho</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background-color: #E78055;
+            font-family: 'Jost', sans-serif;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+            .controls1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .controls1 button, .controls input[type="color"] {
+            margin: 5px 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 2vw;
+        }
+
+        .controls1 button.color-picker {
+            width: 18vw; /* Defina a largura desejada */
+            height: 18vw; /* Defina a altura desejada */
+            background-color: #000000; /* Cor inicial do botão */
+            position: relative;
+        }
+
+        .controls1 input[type="color"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0; /* Tornar o input invisível */
+            cursor: pointer;
+        }
+
+        .controls1 button {
+            width: 18vw; /* Defina a largura desejada */
+            height: 18vw; /* Defina a altura desejada */
+            background-size: cover; /* Ajusta a imagem ao tamanho do botão */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .controls2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+
+        .controls2 img {
+            width: 80vw;
+            height: 27vw; /* Defina a altura desejada */
+            background-size: cover; /* Ajusta a imagem ao tamanho do botão */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        
+        .controls1 button#a {
+            background-image: url('abc_pg1/a.png');
+        }
+
+        .controls1 button#b {
+            background-image: url('abc_pg1/b.png');
+        }
+
+        .controls1 button#c {
+            background-image: url('abc_pg1/c.png');
+        }
+
+        .controls1 button#d {
+            background-image: url('abc_pg1/d.png');
+        }
+
+        .controls1 button#e {
+            background-image: url('abc_pg1/e.png');
+        }
+
+        .controls1 button#f {
+            background-image: url('abc_pg1/f.png');
+        }
+
+        .controls1 button#g {
+            background-image: url('abc_pg1/g.png');
+        }
+
+        .controls1 button#h {
+            background-image: url('abc_pg1/h.png');
+        }
+
+        .controls1 button#i {
+            background-image: url('abc_pg1/i.png');
+        }
+
+        .controls1 button#j {
+            background-image: url('abc_pg1/j.png');
+        }
+
+        .controls1 button#k {
+            background-image: url('abc_pg1/k.png');
+        }
+
+        .controls1 button#l {
+            background-image: url('abc_pg1/l.png');
+        }
+
+        .controls1 button#m {
+            background-image: url('abc_pg1/m.png');
+        }
+
+        .controls1 button#n {
+            background-image: url('abc_pg1/n.png');
+        }
+
+        .controls1 button#o {
+            background-image: url('abc_pg1/o.png');
+        }
+
+        .controls1 button#p {
+            background-image: url('abc_pg1/p.png');
+        }
+
+        .controls1 button#q {
+            background-image: url('abc_pg1/q.png');
+        }
+
+        .controls1 button#r {
+            background-image: url('abc_pg1/r.png');
+        }
+
+        .controls1 button#s {
+            background-image: url('abc_pg1/s.png');
+        }
+
+        .controls1 button#t {
+            background-image: url('abc_pg1/t.png');
+        }
+
+        .controls1 button#u {
+            background-image: url('abc_pg1/u.png');
+        }
+
+        .controls1 button#v {
+            background-image: url('abc_pg1/v.png');
+        }
+
+        .controls1 button#w {
+            background-image: url('abc_pg1/w.png');
+        }
+
+        .controls1 button#x {
+            background-image: url('abc_pg1/x.png');
+        }
+
+        .controls1 button#y {
+            background-image: url('abc_pg1/y.png');
+        }
+
+        .controls1 button#z {
+            background-image: url('abc_pg1/z.png');
+        }
+
+        .controls button.active {
+            box-shadow: 0 0 5px #b7b7b7; /* Destaque para o botão ativo */
+        }
+
+        .background {
+            position: fixed;
+            width: auto;
+            height: auto;
+            z-index: -10;
+        }
+
+        .background img {
+            position: fixed;
+            width: 121vw;
+            margin-left: -53vw;
+            margin-top: -20px;
+        }
+
+        .escolha {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+            flex-direction: row;
+            flex-wrap: wrap;        
+        }
+        
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+            flex-direction: row;
+            flex-wrap: wrap;        
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="background"><img src="app/fundo.png"></div>
+    <div class="logo">
+        <a href="https://brayer.website/">
+            <img src="abc_pg1/log.png"></a>
+    </div>
+    <div class="escolha">
+        <a href="https://brayer.website/">
+            <img src="abc_pg1/Escolha.png"></a>
+    </div>
+    <div class="controls2">
+        <a href="https://brayer.website/">
+        <img src="abc_pg1/livre.png"></a>
+    </div>
+
+        
+    </div>
+    
+    <div class="controls1">
+        <a href="https://brayer.website/">
+        <button id="a" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="b" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="c" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="d" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="e" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="f" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="g" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="h" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="i" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="j" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="k" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="l" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="m" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="n" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="o" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="p" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="q" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="r" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="s" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="t" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="u" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="v" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="w" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="x" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="y" class="active"></button></a>
+        <a href="https://brayer.website/">
+        <button id="z" class="active"></button></a>
+
+    </div>
+
+    
+    
+</body>
+</html>
