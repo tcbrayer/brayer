@@ -1,0 +1,102 @@
+#drawingCanvas {
+    height: 70vh;
+    width: 90%;
+    max-width: 600px; /* Largura máxima */
+    background-color: #ffffff00;
+    margin: 0vw;
+    border-radius: 30px;
+    border: 14px solid #00c7ff;
+    position: fixed;
+} 
+
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.controls button, .controls input[type="color"] {
+    margin: 5px 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.controls button.color-picker {
+    width: 75px;
+    height: 50px;
+    background-color: #000000; /* Cor inicial do botão */
+    position: relative;
+}
+
+.controls input[type="color"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Tornar o input invisível */
+    cursor: pointer;
+}
+
+.controls button {
+    width: 75px; /* Defina a largura desejada */
+    height: 50px; /* Defina a altura desejada */
+    background-size: cover; /* Ajusta a imagem ao tamanho do botão */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.controls button#thin {
+    background-image: url('https://brayer.website/paint/app/linha_fina.png');
+}
+
+.controls button#medium {
+    background-image: url('https://brayer.website/paint/app/linha_media.png');
+}
+
+.controls button#eraser {
+    background-image: url('https://brayer.website/paint/app/borracha.png');
+}
+
+.controls button#thick {
+    background-image: url('https://brayer.website/paint/app/linha_grossa.png');
+}
+
+.controls button#clearCanvas {
+    background-image: url('https://brayer.website/paint/app/apagar.png');
+}
+
+.controls button#printCanvas {
+    background-image: url('https://brayer.website/paint/app/print.png');
+}
+
+.controls button#muteMusic {
+    background-image: url('https://brayer.website/paint/app/mute.png');
+}
+
+.controls button.active {
+    box-shadow: 0 0 5px #46c2f3; /* Destaque para o botão ativo */
+}
+
+.background {
+    position: fixed;
+    width: auto;
+    height: auto;
+    z-index: -10;
+}
+
+.background img {
+    position: fixed;
+    width: 121vw;
+    margin-left: -53vw;
+    margin-top: -20px;
+}

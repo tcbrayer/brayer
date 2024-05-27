@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Escrever</title>
+    <link rel="stylesheet" href="css/styleapp.css">
+    <style>
+        html {
+            position: fixed;
+        }
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background-color: #E78055;
+            font-family: 'Jost', sans-serif;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            margin-left: 50vw;
+            margin-top: 3vw;
+        }
+
+        .letras {
+            z-index: -1;
+            position: fixed;
+            height: 70vh;
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            background-image: url(https://brayer.website/paint/app/y.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0vw;
+            border-radius: 30px;
+            border: 14px solid #00c7ff;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="background"><img src="https://brayer.website/paint/app/fundo.png"></div>
+    <div class="letras"></div>
+    <canvas id="drawingCanvas"></canvas>
+    <div class="controls">
+        <button id="thin" class="active"></button>
+        <button id="medium"></button>
+        <button id="thick"></button>
+        <button id="colorPicker" class="color-picker">
+            <input type="color" id="colorInput" value="#000000">
+        </button>
+        <button id="eraser"></button>
+        <button id="printCanvas"></button>
+        <button id="clearCanvas"></button>
+        
+    </div>
+
+    
+    <audio id="cameraSound" src="sound/camera.mp3"></audio>
+
+    <!-- Adicionando a biblioteca html2canvas -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+    <script src="js/script.js"></script>  
+
+    <script>
+        
+    </script>
+</body>
+</html>
+
