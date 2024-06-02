@@ -38,29 +38,14 @@
             border: 14px solid #00c7ff;
         }
 
-        .retornar {
-            display: flex;
-            position: fixed;
-            z-index: 999999;
-            margin-top: 124vw;
-            margin-left: -79vw;
-        }
-        .retornar img {
-            width: 13vw;
-            height: auto;
-        }
-
+       
         
     </style>
 </head>
 <body>
     <div class="background"><img src="https://brayer.website/paint/app/fundo.png"></div>
     <div class="letras"></div>
-    <div class="retornar">
-        <a href="https://brayer.website/paint/pg1.html">
-            <img src="https://brayer.website/paint/app/retornar.png" alt="Icon 1">
-        </a>
-    </div>
+    
     <canvas id="drawingCanvas"></canvas>
     <div class="controls">
         <button id="thin" class="active"></button>
@@ -73,7 +58,11 @@
         <button id="eraser"></button>
         <button id="clearCanvas"></button>
     
-        
+        <div class="retornar">
+            <a href="https://brayer.website/paint/pg1.html">
+                <img src="https://brayer.website/paint/app/retornar.png">
+            </a>
+        </div>
         
     </div>
 
