@@ -8,7 +8,15 @@
     border: 14px solid #00c7ff;
     position: fixed;
 } 
-
+.retornar {
+    display: flex;
+    z-index: 999999;
+}
+.retornar img {
+    width: 58px;
+    height: 58px;
+    margin-left: 3vw;
+}
 
 
 .controls {
