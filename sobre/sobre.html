@@ -1,175 +1,135 @@
 <!DOCTYPE html>
-<html>
-    <head>
-              <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-T6YZ830185');
-        </script>
-        <meta charset="UTF-8">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="google.com">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="https://tcbrayer.github.io/brayer/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
-        <title>Brayer . Portfolio</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <meta name="description" content="Brayer . Portfolio">
-        <meta name="author" content="Brayer">
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T6YZ830185');
+    </script>
     
-    </head>
-    <body>
-        <main>
-            <top>
-                <div class="logo">
-                    <a href="https://tcbrayer.github.io/brayer/">
-                        <img src="img/logo.png" alt="Logo do site">
-                    </a>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </top>
-            <div class="top-bar"></div>
-            <div class="menu" id="menu">
-                <div class="menu-open-icon" onclick="toggleMenu()"></div>
-                <div class="menu-close-icon" onclick="toggleMenu()"></div>
-                <ul>
-                    <a href="https://tcbrayer.github.io/brayer/">
-                        <li><img src="img/cup-straw.png" alt="Icon 1"> Home</li>
-                    </a>
-                    <a href="https://brayer.website/sobre/sobre.html">
-                        <li><img src="img/heart.png" alt="Icon 2"> Sobre</li>
-                    </a>
-                    <a href="contato/contato.html">
-                        <li><img src="img/list-check.png" alt="Icon 4"> Contato</li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/thiago-brayer-2ba095a3/">
-                        <li><img src="img/linkedin.png" alt="Icon 3"></li>
-                    </a>
-                    
-                </ul>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Sobre - Cunha . Portfolio</title>
+    <meta name="description" content="Conheça mais sobre Thiago Cunha, designer UX/UI especializado em produtos digitais">
+    <meta name="author" content="Cunha">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <top>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Logo Cunha Portfolio">
+                </a>
             </div>
-            <div class="texto-inicial">
-                <p>Sobre mim</p>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="layout-texto">
-                <div class="texto3">
-                    <h2>Com mais de 20 anos liderando a inovação e o sucesso de produtos digitais, trago uma experiência incomparável como autor do livro "Precisão: Desvendando os Caminhos do Sucesso para Produtos Digitais e seu Empreendimento". Como ex-proprietário de uma empresa de consultoria em tecnologia, desenvolvi uma visão única sobre como transformar desafios em oportunidades lucrativas.</h2>
-                    <h2>Minha expertise abrange desde a definição estratégica de produtos até a construção de jornadas do usuário, sempre focado em garantir a melhor experiência para os clientes. Trabalhei com marcas renomadas, como Kaspersky, Dell, Tecmundo, Nike, Click Jogos, WAP, WAAW by Alok, entre outras, otimizando receitas e mantendo uma base de clientes fiéis.</h2>
-                </div>
-            </div>
-            <div class="sobre">
-                <a href="https://tcbrayer.github.io/brayer/">
-                <img src="img/voltardesk.png" alt="Sobre" ></a>
-            </div>
-            <div class="sobremob">
-                <a href="https://tcbrayer.github.io/brayer/">
-                <img src="img/voltarmob.png" alt="Sobre" ></a>
-            </div>
-            
+        </top>
+        
+        <!-- Menu -->
+        <div class="menu" id="menu">
+            <div class="menu-close-icon" onclick="toggleMenu()">✕</div>
+            <ul>
+                <a href="../index.html">
+                    <li><img src="../img/cup-straw.png" alt="Home"> Home</li>
+                </a>
+                <a href="../projetos.html">
+                    <li><img src="../img/heart.png" alt="Projetos"> Projetos</li>
+                </a>
+                <a href="../cases.html">
+                    <li><img src="../img/list-check.png" alt="Cases"> Cases</li>
+                </a>
+                <a href="sobre.html">
+                    <li class="active"><img src="../img/heart.png" alt="Sobre"> Sobre</li>
+                </a>
+                <a href="../contato/contato.html">
+                    <li><img src="../img/list-check.png" alt="Contato"> Contato</li>
+                </a>
+                <a href="https://www.linkedin.com/in/t-cunha/" target="_blank" rel="noopener noreferrer">
+                    <li><img src="../img/linkedin.png" alt="LinkedIn"> LinkedIn</li>
+                </a>
+            </ul>
+        </div>
 
+        <!-- Page Header -->
+        <section class="project-header">
+            <h1>Sobre mim</h1>
+            <p style="font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 1rem auto 0;">Designer UX/UI especializado em criar experiências digitais que transformam ideias em produtos de sucesso</p>
+        </section>
 
-            <div class="block">
-                <a href="https://www.linkedin.com/in/thiagobrayer/" target="_blank">
-                    <img src="img/linkedin.png" alt="LoG Direita"></a>
+        <!-- About Content -->
+        <section class="section">
+            <div class="section-content">
+                <p>Sou Thiago Cunha, um designer UX/UI apaixonado por criar produtos digitais que realmente fazem a diferença. Minha especialização abrange todo o processo de design, desde a descoberta até a implementação, sempre com foco em resultados mensuráveis e na satisfação do usuário.</p>
+                
+                <p class="mt-lg">Trabalho com <strong>Design UX/UI</strong>, realizando pesquisas de usuário, criação de personas, planejamento de recursos, desenvolvimento de fluxos de usuário, wireframes, design de interface, prototipagem e testes de usabilidade. Posso ajudar em todas as fases do processo de design de UX do seu produto, incluindo Discovery completo.</p>
+                
+                <p class="mt-lg">Minha experiência inclui <strong>Design de Web</strong> para diversos tipos de projetos: páginas de destino, sites de marketing, softwares SaaS, lojas de comércio eletrônico e aplicativos web completos. Posso projetar do início ao fim ou redesenhar seu site existente, sempre com foco em experiência do usuário e resultados de negócio.</p>
+                
+                <p class="mt-lg">Desenvolvo <strong>Design Systems</strong> completos do zero, incluindo paleta de cores, tipografia, componentes reutilizáveis, padrões de layout, sistema de espaçamento e diretrizes de uso. Estabeleço processos de <strong>governança de design</strong> para garantir que o Design System seja seguido consistentemente por toda a equipe, criando documentação completa, templates e guias de uso.</p>
+                
+                <p class="mt-lg">Realizo <strong>Discovery e Pesquisa</strong> profundos para entender as necessidades dos usuários e stakeholders. Minha abordagem inclui entrevistas estruturadas, análise de comportamentos, criação de personas, jornadas do usuário detalhadas e análise de métricas de uso. Trabalho com metodologias ágeis e ofereço <strong>consultoria</strong> em gestão de produtos digitais.</p>
+                
+                <p class="mt-lg">Especializo-me em criar <strong>visualizações de dados e gráficos</strong> baseados em pesquisas de Discovery, garantindo que cada visualização atenda às necessidades reais dos usuários. Desenvolvo interfaces para sistemas complexos, incluindo dashboards, análises e relatórios que facilitam a tomada de decisão.</p>
+                
+                <p class="mt-lg">Também ofereço <strong>desenvolvimento HTML</strong> com foco em SEO e Mobile First, garantindo que os designs sejam implementados com qualidade técnica e acessibilidade. Acredito que um bom design une criatividade, estratégia e resultados mensuráveis.</p>
+                
+                <p class="mt-lg">Ao longo da minha carreira, trabalhei com marcas renomadas como <strong>Kaspersky</strong>, <strong>Dell</strong>, <strong>Tecmundo</strong>, <strong>Nike</strong>, <strong>Click Jogos</strong>, <strong>WAP</strong>, <strong>WAAW by Alok</strong>, entre outras. Cada projeto foi uma oportunidade de aprender, crescer e entregar soluções que realmente impactam o negócio.</p>
+                
+                <p class="mt-lg">Sou autor do livro <strong>"Precisão: Desvendando os Caminhos do Sucesso para Produtos Digitais e seu Empreendimento"</strong>, onde compartilho insights valiosos sobre como construir produtos digitais de sucesso, baseados em experiência prática no mercado.</p>
+                
+                <p class="mt-lg">Se você está procurando alguém que entende tanto de design quanto de negócios, que pode ajudar a transformar sua ideia em um produto digital de sucesso, ou se precisa de consultoria para otimizar seus produtos existentes, estou aqui para ajudar. Vamos conversar sobre como posso contribuir para o sucesso do seu projeto!</p>
             </div>
-            
-            <footer>
-                <p>thiagocbrayer@gmail.com  © COPYRIGHT 2023 - brayer . portfolio</p>
-            </footer>
+        </section>
 
-        </main>
-        <script>
-            function toggleMenu() {
-                var menu = document.getElementById("menu");
-                var isOpen = menu.classList.contains("show");
-                if (isOpen) {
-                    menu.classList.remove("show"); // Remove a classe "show" para ocultar o menu
-                    document.body.classList.remove("menu-close-icon");
-                } 
-                else {
-                    menu.classList.add("show"); // Adiciona a classe "show" para mostrar o menu
-                    document.body.classList.add("menu-open-icon");
-                }
+        <!-- Back Button -->
+        <a href="../index.html" class="btn-back">Voltar</a>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/t-cunha/" target="_blank" rel="noopener noreferrer">
+                <img src="../img/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>thiagocbrayer@gmail.com © COPYRIGHT 2024 - cunha . portfolio</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var isOpen = menu.classList.contains("show");
+            if (isOpen) {
+                menu.classList.remove("show");
+                document.body.classList.remove("menu-open-icon");
+            } else {
+                menu.classList.add("show");
+                document.body.classList.add("menu-open-icon");
             }
-            let isDragging = false;
-let startPosition = 0;
-let startScrollLeft = 0;
+        }
 
-const scrollContainer = document.querySelector('.scroll-container');
-const lineCategory = document.querySelector('.line-category');
-
-lineCategory.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = scrollContainer.scrollLeft;
-  lineCategory.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  lineCategory.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    scrollContainer.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-rightImages.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = apps.scrollLeft;
-  rightImages.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  rightImages.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    apps.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-lineImages.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = lineImages.scrollLeft;
-  lineImage.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  lineImage.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    lineImages.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/csv-parser/dist/csv-parser.min.js"></script>
-        <script src="scriptcategorias.js"></script>    
-    </body>
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu').classList.remove('show');
+            });
+        });
+    </script>
+</body>
 </html>
