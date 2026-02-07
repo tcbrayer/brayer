@@ -1,323 +1,151 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-T6YZ830185');
-        </script>
-        
-        <meta charset="UTF-8">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="google.com">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
-        <title>Brayer . Portfolio</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <meta name="description" content="Brayer . Portfolio">
-        <meta name="author" content="Brayer">
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T6YZ830185');
+    </script>
     
-    </head>
-    <body>
-        <main>
-            <top>
-                <div class="logo">
-                    <a href=" ">
-                        <img src="img/logo.png" alt="Logo do site">
-                    </a>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </top>
-            <div class="top-bar"></div>
-            <div class="menu" id="menu">
-                <div class="menu-open-icon" onclick="toggleMenu()"></div>
-                <div class="menu-close-icon" onclick="toggleMenu()"></div>
-                <ul>
-                    <a href="https://tcbrayer.github.io/brayer/">
-                        <li><img src="img/cup-straw.png" alt="Icon 1"> Home</li>
-                    </a>
-                    <a href="sobre/sobre.html">
-                        <li><img src="img/heart.png" alt="Icon 2"> Sobre</li>
-                    </a>
-                    <a href="contato/contato.html">
-                        <li><img src="img/list-check.png" alt="Icon 4"> Contato</li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tbrayer/">
-                        <li><img src="img/linkedin.png" alt="Icon 3"></li>
-                    </a>
-                    
-                </ul>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Cunha . Portfolio</title>
+    <meta name="description" content="Portfolio de Thiago Cunha - Designer UX/UI com mais de 20 anos de experiência em produtos digitais">
+    <meta name="author" content="Cunha">
+</head>
+<body>
+    <main>
+        <!-- Header Lateral -->
+        <top>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo Cunha Portfolio">
+                </a>
             </div>
-            <div class="texto-inicial">
-                <p>Olá, seja muito bem vindo!</p>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="sobre">
-                <a href=" ">
-                <img src="img/CapaLi.png" alt="Banner" ></a>
-            </div>
-            <!--<div class="layout-texto">
-                <div class="texto">
-                    <h2> Com mais de 20 anos liderando a inovação e o sucesso de produtos digitais, trago uma experiência incomparável como autor do livro "Precisão: Desvendando os Caminhos do Sucesso para Produtos Digitais e seu Empreendimento". Como ex-proprietário de uma empresa de consultoria em tecnologia, desenvolvi uma visão única sobre como transformar desafios em oportunidades lucrativas.
-
-                        Minha expertise abrange desde a definição estratégica de produtos até a construção de jornadas do usuário, sempre focado em garantir a melhor experiência para os clientes. Trabalhei com marcas renomadas, como Kaspersky, Dell, Tecmundo, Nike, Click Jogos, WAP, WAAW by Alok, entre outras, otimizando receitas e mantendo uma base de clientes fiéis.</h2>
-                </div>
-            </div>-->
-            <div class="sobre">
+        </top>
+        
+        <!-- Navegação Lateral -->
+        <div class="menu" id="menu">
+            <div class="menu-close-icon" onclick="toggleMenu()">✕</div>
+            <ul>
+                <a href="index.html">
+                    <li class="active"><img src="img/cup-straw.png" alt="Home"> Home</li>
+                </a>
+                <a href="projetos.html">
+                    <li><img src="img/heart.png" alt="Projetos"> Projetos</li>
+                </a>
+                <a href="cases.html">
+                    <li><img src="img/list-check.png" alt="Cases"> Cases</li>
+                </a>
                 <a href="sobre/sobre.html">
-                <img src="img/retangulo.png" alt="Sobre" ></a>
-            </div>
-            <div class="sobremob">
-                <a href="sobre/sobre.html">
-                <img src="img/sobre.png" alt="Sobre" ></a>
-            </div>
-            <div class="sobre" style="margin-top: 5vw;">
-                <a href="https://www.amazon.com.br/dp/B0D1PRFZTY" target="_blank" rel="noopener noreferrer">
-                <img src="img/p1.png" alt="Sobre" ></a>
-            </div>
+                    <li><img src="img/heart.png" alt="Sobre"> Sobre</li>
+                </a>
+                <a href="contato/contato.html">
+                    <li><img src="img/list-check.png" alt="Contato"> Contato</li>
+                </a>
+                <a href="https://www.linkedin.com/in/t-cunha/" target="_blank" rel="noopener noreferrer">
+                    <li><img src="img/linkedin.png" alt="LinkedIn"> LinkedIn</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Olá, seja muito bem vindo!</h1>
+            <p>Sou Thiago Cunha, designer UX/UI especializado em criar produtos digitais que realmente fazem a diferença. Minha especialização abrange todo o processo de design, desde Discovery e pesquisa até Design System, governança e acompanhamento contínuo de produtos.</p>
+            <p>Trabalho com Design UX/UI, Design de Web, desenvolvimento de Design Systems completos, governança de design, Discovery profundo, criação de visualizações de dados e desenvolvimento HTML com foco em SEO e Mobile First. Trabalhei com marcas renomadas como Kaspersky, Dell, Tecmundo, Nike, Click Jogos, WAP, WAAW by Alok, entre outras, sempre focando em resultados mensuráveis e na melhor experiência para os usuários.</p>
             
-            <div class="container">
-                <!-- Imagem do lado esquerdo -->
-                <div class="imagemom2">
-                    <div class="imagedesk2">
-                        <a href=" ">
-                        <img src="img/BYD.png" alt="BYD"></a>
-                    </div>
-                    
-                    <div class="image2">
-                        <a href=" ">
-                        <img src="img/Dell.png" alt="Dell"></a>
-                    </div>
-                </div>
+            <div style="margin-top: var(--spacing-lg); display: flex; gap: var(--spacing-md); flex-wrap: wrap;">
+                <a href="projetos.html" class="btn-primary">Ver Projetos</a>
+                <a href="cases.html" class="btn-primary">Ver Cases</a>
             </div>
-            <div class="container">
-                <!-- Imagem do lado direito -->
-                <div class="imagemom">
-                    <div class="imagedesk1">
-                        <a href="cj/cj.html">
-                        <img src="img/CjWeb.png" alt="CJ Esquerda"></a>
-                    </div>
-                    
-                    <div class="image">
-                        <a href="log/log.html">
-                        <img src="img/LoG.png" alt="LoG Direita"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <!-- Imagem do lado esquerdo -->
-                <div class="imagemom2">
-                    <div class="imagedesk2">
-                        <a href="nike/nike.html">
-                        <img src="img/Nike.png" alt="CJ Esquerda"></a>
-                    </div>
-                    
-                    <div class="image2">
-                        <a href="kaspersky/kaspersky.html">
-                        <img src="img/Kaspersky.png" alt="LoG Direita"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <!-- Imagem do lado direito -->
-                <div class="imagemom">
-                    <div class="imagedesk1">
-                        <a href="wap/wap.html">
-                        <img src="img/WAPweb.png" alt="CJ Esquerda"></a>
-                    </div>
-                    
-                    <div class="image">
-                        <a href="bxk/bxk.html">
-                        <img src="img/BXKmob.png" alt="LoG Direita"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <!-- Imagem do lado esquerdo -->
-                <div class="imagemom2">
-                    <div class="imagedesk2">
-                        <a href="waaw/waaw.html">
-                        <img src="img/WAAW.png" alt="CJ Esquerda"></a>
-                    </div>
-                    
-                    <div class="image2">
-                        <a href="cj/cj.html">
-                        <img src="img/CJPWA.png" alt="LoG Direita"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <!-- Imagem do lado direito -->
-                <div class="imagemom">
-                    <div class="imagedesk1">
-                        <a href="bxkgames/bxkgames.html">
-                        <img src="img/BXKGames.png" alt="CJ Esquerda"></a>
-                    </div>
-                    
-                    <div class="image">
-                        <a href="wap/wap.html">
-                        <img src="img/WAPLP.png" alt="LoG Direita"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <!-- Imagem do lado esquerdo -->
-                <div class="imagemom2">
-                    <div class="imagedesk2">
-                        <a href="tindin/tindin.html">
-                        <img src="https://tcbrayer.github.io/brayer/img/Tindin.png" alt="CJ Esquerda"></a>
-                    </div>
-                    
-                    <div class="image2">
-                        <a href="https://tcbrayer.github.io/brayer/collect/collect.html">
-                        <img src="https://tcbrayer.github.io/brayer/img/CollectIt.png" alt="LoG Direita"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <!-- Imagem do lado direito -->
-                <div class="imagemom">
-                    <div class="imagedesk1">
-                        <a href=" ">
-                        <img src="https://tcbrayer.github.io/brayer/img/TaskInv.png" alt="CJ Esquerda"></a>
-                    </div>
-                    
-                    <div class="image">
-                        <a href="https://tcbrayer.github.io/brayer/bxkgames/bxkgames.html">
-                        <img src="https://tcbrayer.github.io/brayer/img/BXKGameApp.png" alt="LoG Direita"></a>
-                    </div>
-                </div>
-            </div>
-            
+        </section>
 
+        <!-- Banner Livro -->
+        <section class="sobre">
+            <a href="https://www.amazon.com.br/dp/B0D1PRFZTY" target="_blank" rel="noopener noreferrer">
+                <img src="img/p1.png" alt="Livro Precisão">
+            </a>
+        </section>
 
-
-            <div class="container2">
-                <div class="meuservico">
-                    <h2>Meus Serviços</h2>
-                    <div class="servico1">
-                        <div class="servico">
-                            <h3>Design UX / UI</h3>
-                            <p>Pesquisa de usuário e personas, planejamento de recursos, fluxos de usuário, wireframes, design de UI, prototipagem, testes... Posso ajudar em todas as fases do processo de design de UX do seu produto e do Discovery.</p>
-                        </div>
-                        <div class="servico">
-                            <h3>Design de Web</h3>
-                            <p>Seja uma página de destino, um site de marketing, um software SaaS, uma loja de comércio eletrônico ou um aplicativo web completo, posso projetá-lo para você do início ao fim ou redesenhar seu site existente.</p>
-                        </div>
-                        <div class="servico">
-                            <h3>Consultoria</h3>
-                            <p>Nos últimos anos, a popularidade dos produtos digitais cresceu e seu gerênciamento se tornou obsoleto. Ofereço um serviço de gerênciamento e consultoria com metodologias ágeis. Se você estiver com problemas de gerênciamento, eu posso ajudá-lo!</p>
-                        </div>
-                        <div class="servico">
-                            <h3>Desenvolvimento HTML</h3>
-                            <p>O desenvolvimento de páginas em HTML com bom SEO e Mobile First é algo imprescindível hoje em dia, posso desenvolve-lo par você do início ao fim.</p>
-                        </div>
-                            
-                    </div>          
+        <!-- Services Section -->
+        <section class="section">
+            <h2 class="section-title">Meus Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Design UX / UI</h3>
+                    <p>Pesquisa de usuário e personas, planejamento de recursos, fluxos de usuário, wireframes, design de UI, prototipagem, testes... Posso ajudar em todas as fases do processo de design de UX do seu produto e do Discovery.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Design de Web</h3>
+                    <p>Seja uma página de destino, um site de marketing, um software SaaS, uma loja de comércio eletrônico ou um aplicativo web completo, posso projetá-lo para você do início ao fim ou redesenhar seu site existente.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consultoria</h3>
+                    <p>Nos últimos anos, a popularidade dos produtos digitais cresceu e seu gerenciamento se tornou obsoleto. Ofereço um serviço de gerenciamento e consultoria com metodologias ágeis. Se você estiver com problemas de gerenciamento, eu posso ajudá-lo!</p>
+                </div>
+                <div class="service-card">
+                    <h3>Desenvolvimento HTML</h3>
+                    <p>O desenvolvimento de páginas em HTML com bom SEO e Mobile First é algo imprescindível hoje em dia, posso desenvolvê-lo para você do início ao fim.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="block">
-                <a href="https://www.linkedin.com/in/thiagobrayer/" target="_blank">
-                    <img src="https://tcbrayer.github.io/brayer/img/linkedin.png" alt="LoG Direita"></a>
-            </div>
-            
-            <footer>
-                <p>thiagocbrayer@gmail.com  © COPYRIGHT 2024 - brayer . portfolio</p>
-            </footer>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/t-cunha/" target="_blank" rel="noopener noreferrer">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
 
-        </main>
-        <script>
-            function toggleMenu() {
-                var menu = document.getElementById("menu");
-                var isOpen = menu.classList.contains("show");
-                if (isOpen) {
-                    menu.classList.remove("show"); // Remove a classe "show" para ocultar o menu
-                    document.body.classList.remove("menu-close-icon");
-                } 
-                else {
-                    menu.classList.add("show"); // Adiciona a classe "show" para mostrar o menu
-                    document.body.classList.add("menu-open-icon");
-                }
+        <!-- Footer -->
+        <footer>
+            <p>thiagocbrayer@gmail.com © COPYRIGHT 2024 - cunha . portfolio</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var isOpen = menu.classList.contains("show");
+            if (isOpen) {
+                menu.classList.remove("show");
+                document.body.classList.remove("menu-open-icon");
+            } else {
+                menu.classList.add("show");
+                document.body.classList.add("menu-open-icon");
             }
-            let isDragging = false;
-let startPosition = 0;
-let startScrollLeft = 0;
+        }
 
-const scrollContainer = document.querySelector('.scroll-container');
-const lineCategory = document.querySelector('.line-category');
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu').classList.remove('show');
+            });
+        });
 
-lineCategory.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = scrollContainer.scrollLeft;
-  lineCategory.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  lineCategory.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    scrollContainer.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-rightImages.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = apps.scrollLeft;
-  rightImages.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  rightImages.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    apps.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-lineImages.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = lineImages.scrollLeft;
-  lineImage.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  lineImage.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    lineImages.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/csv-parser/dist/csv-parser.min.js"></script>
-        <script src="scriptcategorias.js"></script>    
-    </body>
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.menu a').forEach(link => {
+            const linkPage = link.getAttribute('href').split('/').pop();
+            if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
+                link.querySelector('li').classList.add('active');
+            }
+        });
+    </script>
+</body>
 </html>

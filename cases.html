@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T6YZ830185');
+    </script>
+    
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Cases - Cunha . Portfolio</title>
+    <meta name="description" content="Cases detalhados dos projetos de Thiago Cunha">
+    <meta name="author" content="Cunha">
+</head>
+<body>
+    <main>
+        <!-- Header Lateral -->
+        <top>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo Cunha Portfolio">
+                </a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </top>
+        
+        <!-- Navegação Lateral -->
+        <div class="menu" id="menu">
+            <div class="menu-close-icon" onclick="toggleMenu()">✕</div>
+            <ul>
+                <a href="index.html">
+                    <li><img src="img/cup-straw.png" alt="Home"> Home</li>
+                </a>
+                <a href="projetos.html">
+                    <li><img src="img/heart.png" alt="Projetos"> Projetos</li>
+                </a>
+                <a href="cases.html">
+                    <li class="active"><img src="img/list-check.png" alt="Cases"> Cases</li>
+                </a>
+                <a href="sobre/sobre.html">
+                    <li><img src="img/heart.png" alt="Sobre"> Sobre</li>
+                </a>
+                <a href="contato/contato.html">
+                    <li><img src="img/list-check.png" alt="Contato"> Contato</li>
+                </a>
+                <a href="https://www.linkedin.com/in/t-cunha/" target="_blank" rel="noopener noreferrer">
+                    <li><img src="img/linkedin.png" alt="LinkedIn"> LinkedIn</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Page Header -->
+        <section class="case-hero">
+            <h1>Cases de Sucesso</h1>
+            <p>Explore em detalhes os projetos que desenvolvi, desde a descoberta até a implementação, mostrando todo o processo criativo e estratégico por trás de cada solução.</p>
+        </section>
+
+        <!-- Apus TI Case -->
+        <section id="apus" class="case-section">
+            <h2>Apus TI</h2>
+            <div class="case-image">
+                <img src="apus/Painel de modulos.png" alt="Apus TI - Painel de Módulos">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>Criar e implementar um Design System completo para um produto SaaS B2B extremamente complexo voltado para grupos escolares e secretarias municipais de educação. O sistema integrava dois grandes módulos: acadêmico (professores, alunos e pais) e administrativo (gestão completa de escolas, documentos, RH, financeiro, operações e muito mais).</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Realizei um extenso trabalho de Discovery para entender as necessidades de todos os stakeholders. Desenvolvi um Design System completo do zero, incluindo paleta de cores, tipografia, componentes reutilizáveis, templates e padrões de layout. Estabeleci processos de governança de design e mantive acompanhamento contínuo do produto com melhorias iterativas.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>Design System robusto e escalável que unificou a experiência em todos os módulos do sistema, facilitando a manutenção, acelerando o desenvolvimento e garantindo consistência visual e funcional. A governança estabelecida garantiu que o sistema evoluísse de forma controlada e documentada, atendendo às necessidades de todos os perfis de usuários.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="apus/template Grafico.png" alt="Apus TI - Template de Gráficos">
+            </div>
+            
+            <!-- Design System Images -->
+            <div class="project-content" style="margin-top: var(--spacing-md);">
+                <div class="project-image">
+                    <img src="apus/Tokens Cores.png" alt="Tokens de Cores - Design System Apus TI">
+                </div>
+                <div class="project-image">
+                    <img src="apus/Espaçamento.png" alt="Sistema de Espaçamento - Design System Apus TI">
+                </div>
+            </div>
+            
+            <div class="case-image" style="margin-top: var(--spacing-md);">
+                <img src="apus/Template configuraçoes.png" alt="Apus TI - Template de Configurações">
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-md);">
+                <a href="apus/case/apuscase.html" class="case-complete-link">Ver Case Completo →</a>
+            </div>
+        </section>
+
+        <!-- Task Invest Case -->
+        <section id="taskinvest" class="case-section">
+            <h2>Task Invest</h2>
+            <div class="case-image">
+                <img src="img/taskinvest-dashboard.svg" alt="Task Invest - Dashboard Principal">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>Criar uma plataforma completa de investimentos que atendesse diferentes perfis de investidores, desde iniciantes até experientes. O sistema precisava apresentar informações financeiras complexas de forma clara e intuitiva, com gráficos e visualizações baseados nas necessidades reais dos usuários.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Realizei pesquisas profundas de Discovery sobre cada tipo de investimento (ações, renda fixa, criptomoedas, fundos), entendendo como investidores reais utilizam essas informações. Desenvolvi gráficos e visualizações baseados nas demandas e utilização identificadas, criando um Design System completo para fintech e estabelecendo governança de design.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>Plataforma completa e intuitiva que permite aos investidores gerenciar seus portfólios de forma eficiente, com visualizações de dados que realmente atendem às suas necessidades. Os gráficos desenvolvidos facilitam a análise e tomada de decisão, enquanto o Design System garante consistência e confiança em um contexto financeiro crítico.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/taskinvest-graphics.svg" alt="Task Invest - Gráficos e Visualizações">
+            </div>
+            <p style="text-align: center; color: var(--text-light); font-size: 0.9rem; margin-top: var(--spacing-sm); font-style: italic;">* As imagens apresentadas são ilustrativas. Não possuo autorização para divulgar imagens reais do produto.</p>
+            
+            <div class="case-image" style="margin-top: var(--spacing-md);">
+                <img src="img/taskinvest-design-system.svg" alt="Task Invest - Design System">
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-md);">
+                <a href="taskinvest/case/taskinvestcase.html" class="case-complete-link">Ver Case Completo →</a>
+            </div>
+        </section>
+
+        <!-- Click Jogos Case -->
+        <section id="click-jogos" class="case-section">
+            <h2>Click Jogos</h2>
+            <div class="case-image">
+                <img src="img/bannercj1.png" alt="Click Jogos Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>O Click Jogos precisava de um redesign completo para modernizar sua plataforma de jogos online, melhorar a experiência do usuário e criar um novo CMS que facilitasse a gestão de conteúdo. O público-alvo principal eram crianças, o que exigia uma abordagem especial de design.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi um extenso trabalho de descoberta do produto para entender melhor os usuários. Criei um novo layout moderno e intuitivo, um novo CMS personalizado e selecionei cuidadosamente jogos em HTML5 para garantir compatibilidade universal. O design mobile foi especialmente otimizado com botões maiores para facilitar o acesso de crianças menores.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>O novo site oferece uma experiência muito mais fluida e envolvente, com navegação intuitiva que permite que crianças encontrem e joguem seus jogos favoritos facilmente. O CMS facilita a atualização constante de conteúdo, mantendo a plataforma sempre atualizada e relevante.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/CjWeb.png" alt="Click Jogos Web">
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-md);">
+                <a href="cj/case/cjcase.html" class="case-complete-link">Ver Case Completo →</a>
+            </div>
+        </section>
+
+        <!-- LoG Case -->
+        <section id="log" class="case-section">
+            <h2>LoG</h2>
+            <div class="case-image">
+                <img src="img/logbanner.png" alt="LoG Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>Criar um aplicativo inovador de entregas de postagens que conectasse motoristas cadastrados com empresas de logística parceiras, gerenciando todo o processo logístico incluindo atribuição de tarefas e processamento de pagamentos.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi uma investigação minuciosa para compreender as necessidades dos usuários e das empresas parceiras. Criei uma interface intuitiva que permite aos motoristas gerenciar suas entregas de forma eficiente, com elementos grandes e fáceis de usar durante o deslocamento.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>O aplicativo LoG otimizou significativamente o processo de entregas, oferecendo uma experiência fluida tanto para motoristas quanto para empresas parceiras, resultando em maior eficiência operacional e satisfação dos usuários.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/LoG.png" alt="LoG App">
+            </div>
+        </section>
+
+        <!-- Nike Chile Case -->
+        <section id="nike" class="case-section">
+            <h2>Nike Chile</h2>
+            <div class="case-image">
+                <img src="img/nikebanner.png" alt="Nike Chile Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>A Nike do Chile buscava estratégias para aprimorar sua presença online e criar uma conexão mais direta e impactante com seus consumidores, especialmente para produtos específicos como tênis.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi landing pages estratégicas e personalizadas para tênis específicos, cada uma meticulosamente planejada para proporcionar uma experiência envolvente. Utilizei imagens de alta qualidade, vídeos interativos e informações detalhadas que ajudam o consumidor a tomar uma decisão informada.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>As landing pages criaram uma conexão direta e impactante com os consumidores, apresentando informações detalhadas sobre cada tênis e suas características exclusivas, resultando em maior engajamento e conversão.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/Nike.png" alt="Nike Chile">
+            </div>
+        </section>
+
+        <!-- Kaspersky Case -->
+        <section id="kaspersky" class="case-section">
+            <h2>Kaspersky</h2>
+            <div class="case-image">
+                <img src="img/kasp.png" alt="Kaspersky Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>A Kaspersky, renomada empresa de segurança cibernética, precisava aprimorar sua comunicação com o público, transmitindo informações vitais sobre segurança digital de forma direta e envolvente.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Criei landing pages estratégicas que focam em transmitir confiança e segurança, utilizando elementos visuais que reforçam a expertise da marca. As páginas foram otimizadas para conversão, com chamadas para ação claras e informações técnicas apresentadas de forma acessível.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>As landing pages estabeleceram uma conexão sólida e impactante com clientes em potencial, transmitindo informações vitais sobre segurança digital de maneira eficaz e aumentando a conversão.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/Kaspersky.png" alt="Kaspersky">
+            </div>
+        </section>
+
+        <!-- WAP Case -->
+        <section id="wap" class="case-section">
+            <h2>WAP</h2>
+            <div class="case-image">
+                <img src="img/wapbanner1.png" alt="WAP Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>A empresa WAP, referência no setor de produtos de limpeza, buscava aprimorar sua presença online e otimizar a experiência de compra, especialmente para sua linha de aspiradores.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Realizei uma remodelagem completa do e-commerce, com foco específico na linha de aspiradores. O novo design prioriza a usabilidade e clareza na apresentação dos produtos, com informações técnicas detalhadas, imagens de alta qualidade e comparações que ajudam o consumidor a escolher o produto ideal.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>A experiência de compra foi significativamente melhorada, com um processo de checkout simplificado e intuitivo, resultando em maior conversão e satisfação do cliente.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/WAPweb.png" alt="WAP">
+            </div>
+        </section>
+
+        <!-- Baixaki Case -->
+        <section id="baixaki" class="case-section">
+            <h2>Baixaki</h2>
+            <div class="case-image">
+                <img src="img/baixakibanner1.png" alt="Baixaki Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>O Baixaki, conhecido site de downloads e análises de software, precisava otimizar sua abordagem para alcançar melhor seu público, oferecendo uma navegação mais intuitiva e informações mais acessíveis.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Realizei uma remodelagem completa do site, priorizando organização e clareza. A estrutura foi reorganizada para melhorar a hierarquia visual e tornar as informações mais acessíveis, facilitando a descoberta de software e a leitura de análises.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>O site foi otimizado para diferentes dispositivos, garantindo uma experiência consistente em desktop, tablet e mobile, resultando em maior satisfação do público e fortalecimento da presença online.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/BXKmob.png" alt="Baixaki">
+            </div>
+        </section>
+
+        <!-- WAAW Case -->
+        <section id="waaw" class="case-section">
+            <h2>WAAW by Alok</h2>
+            <div class="case-image">
+                <img src="img/waawbanner.png" alt="WAAW Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>A empresa WAAW, liderada pelo renomado DJ Alok, precisava criar um site estratégico para o lançamento de seus produtos de áudio (fones de ouvido e caixas de som) em 2021, atingindo seu público de maneira impactante.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi um site envolvente que reflete a energia e inovação da marca WAAW, utilizando elementos visuais dinâmicos, animações sutis e uma paleta de cores que transmite modernidade e qualidade. A experiência foi cuidadosamente planejada para destacar os produtos de áudio.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>O site proporcionou aos fãs e consumidores uma experiência imersiva que permitiu explorar e adquirir os produtos exclusivos da marca, ajudando a WAAW a alcançar seus objetivos de lançamento de forma impressionante.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/WAAW.png" alt="WAAW">
+            </div>
+        </section>
+
+        <!-- Baixaki Games Case -->
+        <section id="baixaki-games" class="case-section">
+            <h2>Baixaki Games</h2>
+            <div class="case-image">
+                <img src="img/BXKgamesbanner.png" alt="Baixaki Games Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>O Baixaki Games buscava maximizar seu alcance junto ao público gamer, criando uma plataforma dedicada exclusivamente a downloads de jogos que atendesse às necessidades específicas da comunidade gamer.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi uma plataforma focada na descoberta de jogos, facilitando a navegação por categorias, gêneros e recomendações personalizadas. A interface prioriza a visualização de screenshots, vídeos e informações detalhadas sobre cada jogo.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>O site foi projetado para ser rápido, intuitivo e visualmente atraente, refletindo a energia e paixão da comunidade gamer, estabelecendo-se como um destino confiável para downloads de jogos.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/BXKGames.png" alt="Baixaki Games">
+            </div>
+        </section>
+
+        <!-- Tindin Case -->
+        <section id="tindin" class="case-section">
+            <h2>Tindin</h2>
+            <div class="case-image">
+                <img src="img/tindinbanner.png" alt="Tindin Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>A plataforma de ensino Tindin precisava lançar um novo aplicativo que proporcionasse uma experiência educativa de alta qualidade, fortalecendo sua presença online e se posicionando como escolha confiável para estudantes.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi um aplicativo focado na usabilidade e engajamento dos estudantes, com interface que prioriza clareza e organização do conteúdo educacional. O design incentiva o aprendizado através de elementos visuais atraentes e experiência interativa.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>O aplicativo proporcionou uma experiência educativa de excelência, facilitando o acesso ao conteúdo educacional de alta qualidade e posicionando a Tindin como a escolha confiável para estudantes que buscam aprendizado excepcional.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/Tindin.png" alt="Tindin">
+            </div>
+        </section>
+
+        <!-- CollectIt Case -->
+        <section id="collectit" class="case-section">
+            <h2>CollectIt</h2>
+            <div class="case-image">
+                <img src="img/collectitbanner.png" alt="CollectIt Banner">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>O marketplace Collect It precisava criar um novo aplicativo destinado a compras em geral que proporcionasse uma experiência excepcional aos consumidores, fortalecendo sua presença online.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi um aplicativo estrategicamente projetado com foco na descoberta de produtos e facilidade de compra. A interface prioriza visualização clara de produtos, com imagens de alta qualidade, informações detalhadas e avaliações de outros compradores.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>O processo de checkout foi simplificado para garantir uma experiência fluida e segura, solidificando a posição do Collect It como uma plataforma confiável e atrativa para compras diversas.</p>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="img/CollectIt.png" alt="CollectIt">
+            </div>
+        </section>
+
+        <!-- BYD Case -->
+        <section id="byd" class="case-section">
+            <h2>BYD</h2>
+            <div class="case-image">
+                <img src="img/BYD.png" alt="BYD">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>Criar uma experiência digital para a renomada marca BYD que refletisse seus valores de inovação e sustentabilidade, proporcionando aos usuários uma jornada envolvente sobre os produtos e soluções da marca.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi uma experiência digital focada em sustentabilidade e inovação, utilizando elementos visuais que reforçam os valores da marca. A interface foi otimizada para diferentes dispositivos, garantindo que a mensagem da BYD seja transmitida de forma consistente.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>A plataforma digital não apenas apresenta os produtos da BYD de forma atrativa, mas também educa e inspira os usuários sobre o futuro da mobilidade sustentável, criando uma conexão emocional com aqueles interessados em soluções sustentáveis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dell Case -->
+        <section id="dell" class="case-section">
+            <h2>Dell</h2>
+            <div class="case-image">
+                <img src="img/Dell.png" alt="Dell">
+            </div>
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Desafio</h3>
+                    <p>Otimizar a jornada do usuário e aumentar a conversão na experiência digital da Dell, facilitando a descoberta de produtos, comparação de especificações e processo de compra.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Solução</h3>
+                    <p>Desenvolvi uma experiência centrada no usuário, focando em simplificar a jornada de compra. O design prioriza clareza e organização, com interface que facilita a comparação de produtos e visualização de especificações técnicas.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Resultado</h3>
+                    <p>A otimização da jornada do usuário resultou em melhorias significativas na conversão, com um processo de compra mais direto e intuitivo, oferecendo uma experiência digital que facilita a tomada de decisão.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back Button -->
+        <a href="index.html" class="btn-back">Voltar</a>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/t-cunha/" target="_blank" rel="noopener noreferrer">
+                <img src="img/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>thiagocbrayer@gmail.com © COPYRIGHT 2024 - cunha . portfolio</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var isOpen = menu.classList.contains("show");
+            if (isOpen) {
+                menu.classList.remove("show");
+                document.body.classList.remove("menu-open-icon");
+            } else {
+                menu.classList.add("show");
+                document.body.classList.add("menu-open-icon");
+            }
+        }
+
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu').classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
