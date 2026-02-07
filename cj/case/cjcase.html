@@ -1,518 +1,278 @@
 <!DOCTYPE html>
-<html>
-    <head>
-              <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-T6YZ830185');
-        </script>
-        <meta charset="UTF-8">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="google.com">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="https://tcbrayer.github.io/brayer/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
-        <title>Brayer . Portfolio</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <meta name="description" content="Brayer . Portfolio">
-        <meta name="author" content="Brayer">
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YZ830185"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T6YZ830185');
+    </script>
     
-        <style>
-            @media (max-width: 600px) {
-                body {        
-                    display: none;
-                }
-            }
-            @media (min-width: 601px) {
-            body {
-                background-color: #0F1923;
-            }
-            .principal img {
-                width: 100%;
-                height: auto;
-            }
-            .principal2 img {
-                width: 80vw;
-                height: auto;
-                margin-top: 10vw;
-                margin-block-end: 4vw;
-            }
-            .principal2 {
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-            }
-            .titulo1 {
-                display: flex;
-                justify-content: space-evenly;
-            }
-            .titulo1 h3{
-                color: white;
-                font-size: 2.5vw;
-                font-style: normal;
-                font-weight: 300;
-                text-align: center;
-                margin-left: 0vw;
-                margin-top: 9vw;
-                margin-block-end: -7vw;
-            }
-            .principal23 {
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-                flex-direction: column;
-            }
-            .principal23 h3{
-                color: white;
-                font-size: 2.5vw;
-                font-style: normal;
-                font-weight: 300;
-                margin-top: 12vw;
-                margin-block-end: 0vw;
-                text-align: right;
-                margin-right: 8.5vw;
-            }
-            .principal23 img {
-                width: 86vw;
-                height: auto;
-                margin-left: 7vw;
-                border-radius: 1vw;
-                margin-top: -3vw;
-            }
-            .containerscroll {
-                overflow: hidden;
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-                position: absolute;
-                top: 27vw;
-                width: 100%;
-                height: auto;
-            }
-            .container3 {
-                display: flex;
-                flex-wrap: nowrap;
-                flex-direction: row-reverse;
-                position: initial;
-                align-items: stretch;
-                justify-content: space-evenly;
-                margin-top: -10vw;
-            }
-            
-            #scrollImage {
-                width: 80vw;
-                height: auto;
-                transition: transform 0.5s;
-                padding-top: 12vw;
-                padding-block-end: 12vw;
-            }
-            .containerscroll2 {
-                overflow: hidden;
-                position: relative;
-                width: 100%;
-                height: 100%;
-            }
-  
-            #scrollImage2 {
-                width: 100%;
-                height: auto;
-                transition: transform 0.5s;
-            }
-            .servico1 {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-                margin-left: 4.5vw;
-                margin-right: 5.5vw;
-                margin-top: 17vw;
-            }
-            .imagedesk123 img {
-                width: 38vw;
-                height: auto;
-                margin-left: 8vw;
-            }
-            .imagemom {
-                width: auto;
-                display: flex;
-                flex-direction: row;
-                padding-right: 0.5vw;
-                margin-top: 17vw;
-            }
-            .imagedesk123,
-            .imagedesk12,
-            .imagedesk13 {
-                flex: 1;
-            }
-            .imagedesk123 img,
-            .imagedesk12 img,
-            .imagedesk13 img {
-                
-                transition: transform 0.3s;
-            }
-            .imagedesk123 img:hover,
-            .imagedesk12 img:hover,
-            .imagedesk13 img:hover {
-                transform: scale(1.3);
-            }
-            .imagedesk12 img {
-                width: 48vw;
-                height: auto;
-                margin-left: 9vw;
-                border-radius: 1vw;
-            }
-            h3 {
-                color: white;
-                margin-left: 10vw;
-                font-size: 2.5vw;
-                font-style: normal;
-                font-weight: 300;
-                margin-top: 0.5vw;
-                margin-block-end: 0vw;
-            }
-            .imagedesk13 h3 {
-                color: white;
-                margin-left: 11vw;
-                font-size: 2.5vw;
-                font-style: normal;
-                font-weight: 300;
-                margin-top: 0.5vw;
-                margin-block-end: 0vw;
-            }
-            .texto4 h3 {
-                color: white;
-                font-size: 2.5vw;
-                font-style: normal;
-                font-weight: 300;
-                margin-top: 0.5vw;
-                margin-block-end: 0vw;
-                text-align: right;
-                margin-right: 8vw;
-            }
-            .texto4 h2 {
-                color: #ffffff;
-                text-align: justify;
-                font-size: 1.8vw;
-                font-style: normal;
-                font-weight: 300;
-                padding-right: 8vw;
-                margin-block-end: 2vw;
-                margin-left: 2vw;
-                line-height: 1.5;
-            }
-            .texto5 h2 {
-                color: #ffffff;
-                text-align: justify;
-                font-size: 1.8vw;
-                font-style: normal;
-                font-weight: 300;
-                padding-left: 10vw;
-                margin-block-end: 2vw;
-                margin-right: 2vw;
-                line-height: 1.5;
-            }
-            .texto7 h2 {
-                color: #ffffff;
-                text-align: justify;
-                font-size: 1.8vw;
-                font-style: normal;
-                font-weight: 300;
-                margin-block-end: 2vw;
-                margin-left: 12vw;
-                line-height: 1.5;
-                margin-right: 43vw;
-                margin-top: -23vw;
-            }
-            .texto6 h2 {
-                color: #ffffff;
-                text-align: justify;
-                font-size: 1.8vw;
-                font-style: normal;
-                font-weight: 300;
-                margin-block-end: 2vw;
-                margin-left: 57vw;
-                line-height: 1.5;
-                margin-right: 1vw;
-                margin-top: 16vw;
-            }
-            .texto8 {
-                display: flex;
-                justify-content: space-evenly;
-            }
-            .texto8 h2 {
-                color: #ffffff;
-                text-align: justify;
-                font-size: 1.8vw;
-                font-style: normal;
-                font-weight: 300;
-                margin-block-end: 7vw;
-                margin-left: 10vw;
-                line-height: 1.5;
-                margin-right: 10vw;
-                margin-top: -2vw;
-            }
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <top>
-                <div class="logo">
-                    <a href="https://tcbrayer.github.io/brayer/">
-                        <img src="https://tcbrayer.github.io/brayer/img/logo.png" alt="Logo do site">
-                    </a>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </top>
-            <div class="top-bar"></div>
-            <div class="menu" id="menu">
-                <div class="menu-open-icon" onclick="toggleMenu()"></div>
-                <div class="menu-close-icon" onclick="toggleMenu()"></div>
-                <ul>
-                    <a href="https://tcbrayer.github.io/brayer/">
-                        <li><img src="https://tcbrayer.github.io/brayer/img/cup-straw.png" alt="Icon 1"> Home</li>
-                    </a>
-                    <a href="https://tcbrayer.github.io/brayer/sobre/sobre.html">
-                        <li><img src="https://tcbrayer.github.io/brayer/img/heart.png" alt="Icon 2"> Sobre</li>
-                    </a>
-                    <a href="https://tcbrayer.github.io/brayer/contato/contato.html">
-                        <li><img src="https://tcbrayer.github.io/brayer/img/list-check.png" alt="Icon 4"> Contato</li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/thiago-brayer-2ba095a3/">
-                        <li><img src="https://tcbrayer.github.io/brayer/img/linkedin.png" alt="Icon 3"></li>
-                    </a>
-                    
-                </ul>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Case Click Jogos - Cunha . Portfolio</title>
+    <meta name="description" content="Case completo detalhado do projeto Click Jogos - Redesign completo e novo CMS">
+    <meta name="author" content="Cunha">
+</head>
+<body>
+    <main>
+        <!-- Header Lateral -->
+        <top>
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../../img/logo.png" alt="Logo Cunha Portfolio">
+                </a>
             </div>
-            <div class="principal">
-                
-                <img src="https://tcbrayer.github.io/brayer/img/banner-principal.png" alt="Sobre" >
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="containerscroll">
-                <img id="scrollImage" src="https://tcbrayer.github.io/brayer/img/quadrados.png" alt="Scrolling Image">
-            </div>
-            
-            
-            <div class="container">
-                <!-- Imagem do lado direito -->
-                <div class="imagemom">
-                    <div class="imagedesk12">
-                        <h3>Os Problemas</h3>
-                        
-                        <img src="https://tcbrayer.github.io/brayer/img/cjantigo.png" alt="CJ Esquerda">
-                    </div>
-                    <div class="layout-texto">
-                        
-                        <div class="texto4">
-                            <h2>O antigo Click Jogos enfrentava diversos problemas, sendo os principais um sistema de gerenciamento de conteúdo desatualizado, uma excessiva quantidade de propagandas que prejudicava a experiência de uso, resultando em dificuldades para jogar, além de um tempo médio de visita muito reduzido e a obsolescência do Flash provocou a inoperância da maioria dos jogos disponíveis no site.</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="container">
-                <!-- Imagem do lado direito -->
-                <div class="imagemom2">
-                    <div class="imagedesk13">
-                        
-                            <img src="https://tcbrayer.github.io/brayer/img/jogos.png" alt="CJ Esquerda">
-                        </div>
-                        
-                    </div>
-                    <div class="layout-texto">
-                        <div class="texto5">
-                            <h3>Solução</h3>
-                            <h2>Fizemos um extenso trabalho de descoberta do produto para entender melhor os usuários e, em seguida, redesenhar completamente o site. Isso incluiu a criação de um novo CMS e um novo layout, além da escolha cuidadosa de jogos em HTML5 para garantir que todos os jogos funcionassem perfeitamente. Também foi dada especial atenção ao design para a versão mobile, com botões maiores para facilitar o acesso de crianças menores.</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="principal2">
-                
-                <img src="https://tcbrayer.github.io/brayer/img/cjnew.png" alt="Sobre" >
-            </div>
-
-            <div class="container3">
-                <!-- Imagem do lado direito -->
-                <div class="imagemom">
-                    <div class="imagedesk123">
-                        
-                        
-                        <img src="https://tcbrayer.github.io/brayer/img/jogos2.png" alt="CJ Esquerda">
-                    </div>
-                    <div class="layout-texto">
-                        
-                        <div class="texto4">
-                            <h3>Novos Jogos</h3>
-                            <h2>O novo site foi projetado para atender aos usuários recorrentes, com destaque para os jogos mais populares na primeira página. Isso tornou mais fácil para os usuários encontrarem os jogos que desejam jogar.</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="principal23">
-                <h3>Aprimoramento</h3>
-                <img src="https://tcbrayer.github.io/brayer/img/amazonpwa.png" alt="Sobre" >
-            </div>
-            <div class="layout-texto">
-                        
-                <div class="texto7">
-                    
-                    <h2>Para entregar uma maior receita, nos juntamos a parceiros para vendas através do site com produtos destinados aos usuários</h2>
-                </div>
-                <div class="texto6">
-                    
-                    <h2>Foi criado um PWA para fornecer uma experiência de usuário aprimorada e eficiente.</h2>
-                </div>
-            </div>
-            <div class="titulo1">
-                <h3>Resultado das ações</h3>
-            </div>
-            <div class="principal2">
-                
-                <img src="https://tcbrayer.github.io/brayer/img/grafico.png" alt="Sobre" >
-            </div>
-            <div class="texto8">
-                    
-                <h2>Essas mudanças resultaram em um aumento significativo na receita do site em comparação com o antigo, bem como um aumento na média de tempo de visita dos usuários para mais de 9 minutos, demonstrando a eficácia do novo layout e gerenciamento de jogos.</h2>
-            </div>
-            
-            <div class="sobre">
-                <a href="https://tcbrayer.github.io/brayer/">
-                <img src="https://tcbrayer.github.io/brayer/img/voltardesk.png" alt="Sobre" ></a>
-            </div>
-            <div class="sobremob">
-                <a href="https://tcbrayer.github.io/brayer/">
-                <img src="https://tcbrayer.github.io/brayer/img/voltarmob.png" alt="Sobre" ></a>
-            </div>
-
-            <div class="block">
-                <a href="https://www.linkedin.com/in/thiago-brayer-2ba095a3/" target="_blank">
-                    <img src="https://tcbrayer.github.io/brayer/img/linkedin.png" alt="LoG Direita"></a>
-            </div>
-            
-            <footer>
-                <p>thiagocbrayer@gmail.com  © COPYRIGHT 2023 - brayer . portfolio</p>
-            </footer>
-
-        </main>
-        <script>
-            function toggleMenu() {
-                var menu = document.getElementById("menu");
-                var isOpen = menu.classList.contains("show");
-                if (isOpen) {
-                    menu.classList.remove("show"); // Remove a classe "show" para ocultar o menu
-                    document.body.classList.remove("menu-close-icon");
-                } 
-                else {
-                    menu.classList.add("show"); // Adiciona a classe "show" para mostrar o menu
-                    document.body.classList.add("menu-open-icon");
-                }
-            }
-            let isDragging = false;
-let startPosition = 0;
-let startScrollLeft = 0;
-
-const scrollContainer = document.querySelector('.scroll-container');
-const lineCategory = document.querySelector('.line-category');
-
-lineCategory.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = scrollContainer.scrollLeft;
-  lineCategory.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  lineCategory.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    scrollContainer.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-rightImages.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = apps.scrollLeft;
-  rightImages.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  rightImages.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    apps.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-lineImages.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startPosition = e.clientX;
-  startScrollLeft = lineImages.scrollLeft;
-  lineImage.style.cursor = 'grabbing'; /* Altera o cursor durante o arraste */
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  lineImage.style.cursor = 'grab'; /* Restaura o cursor após o arraste */
-});
-
-document.addEventListener('mousemove', (e) => {
-  if (isDragging) {
-    const dx = e.clientX - startPosition;
-    lineImages.scrollLeft = startScrollLeft - dx;
-  }
-});
-
-
-        </script>
+        </top>
         
-        <script>
-            const scrollImage = document.getElementById('scrollImage');
-          
-            window.addEventListener('scroll', () => {
-              const scrollPosition = window.scrollY;
-              const windowHeight = window.innerHeight;
-          
-              // Define o ponto de início e fim da animação
-              const startAnimation = 0; // Começa a animação desde o topo
-              const endAnimation = windowHeight / 2;
-          
-              // Calcula a escala da imagem com base na posição de rolagem
-              const scale = 1 + (scrollPosition - startAnimation) / (endAnimation - startAnimation);
-          
-              // Limita a escala mínima para evitar que a imagem diminua demais
-              const minScale = 1;
-              const maxScale = 2;
-          
-              // Aplica a escala à imagem
-              scrollImage.style.transform = `scale(${Math.min(maxScale, Math.max(minScale, scale))})`;
+        <!-- Navegação Lateral -->
+        <div class="menu" id="menu">
+            <div class="menu-close-icon" onclick="toggleMenu()">✕</div>
+            <ul>
+                <a href="../../index.html">
+                    <li><img src="../../img/cup-straw.png" alt="Home"> Home</li>
+                </a>
+                <a href="../../projetos.html">
+                    <li><img src="../../img/heart.png" alt="Projetos"> Projetos</li>
+                </a>
+                <a href="../../cases.html">
+                    <li class="active"><img src="../../img/list-check.png" alt="Cases"> Cases</li>
+                </a>
+                <a href="../../sobre/sobre.html">
+                    <li><img src="../../img/heart.png" alt="Sobre"> Sobre</li>
+                </a>
+                <a href="../../contato/contato.html">
+                    <li><img src="../../img/list-check.png" alt="Contato"> Contato</li>
+                </a>
+                <a href="https://www.linkedin.com/in/t-cunha/" target="_blank" rel="noopener noreferrer">
+                    <li><img src="../../img/linkedin.png" alt="LinkedIn"> LinkedIn</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Case Hero -->
+        <section class="case-hero">
+            <h1>Click Jogos - Case Completo</h1>
+            <p>Redesign completo da plataforma de jogos online, incluindo novo CMS, layout moderno e experiência otimizada para crianças.</p>
+        </section>
+
+        <!-- Desafio -->
+        <section class="case-section">
+            <h2>O Desafio</h2>
+            <p>O Click Jogos precisava de um redesign completo para modernizar sua plataforma de jogos online, melhorar a experiência do usuário e criar um novo CMS que facilitasse a gestão de conteúdo. O público-alvo principal eram crianças, o que exigia uma abordagem especial de design.</p>
+            
+            <div class="project-overview" style="margin-top: var(--spacing-md);">
+                <div class="overview-card">
+                    <h3>Experiência do Usuário</h3>
+                    <p>A plataforma precisava ser intuitiva e envolvente para crianças de diferentes idades, facilitando a descoberta e o acesso aos jogos favoritos.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Gestão de Conteúdo</h3>
+                    <p>Era necessário criar um CMS moderno e eficiente que permitisse atualizações constantes de jogos e conteúdo, mantendo a plataforma sempre atualizada.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Compatibilidade e Performance</h3>
+                    <p>O sistema precisava funcionar perfeitamente em diferentes dispositivos, especialmente em mobile, com botões maiores e interface otimizada para telas touch.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Processo -->
+        <section class="case-section">
+            <h2>O Processo</h2>
+            
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>1. Discovery e Pesquisa</h3>
+                    <p>Desenvolvi um extenso trabalho de descoberta do produto para entender melhor os usuários, seus comportamentos e necessidades. Analisei como crianças interagem com jogos online, quais são suas preferências e como facilitar essa experiência.</p>
+                    
+                    <p style="margin-top: 1rem;">A pesquisa incluiu análise de concorrentes, estudos de usabilidade e entendimento profundo do público-alvo para criar uma experiência verdadeiramente adequada para crianças.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>2. Design e Layout</h3>
+                    <p>Criei um novo layout moderno e intuitivo, priorizando clareza visual e facilidade de navegação. O design foi pensado para ser atraente para crianças, mas também funcional e organizado.</p>
+                    
+                    <p style="margin-top: 1rem;">A interface foi otimizada para diferentes dispositivos, com atenção especial ao mobile, onde botões maiores facilitam o acesso de crianças menores.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>3. CMS Personalizado</h3>
+                    <p>Desenvolvi um novo CMS personalizado que facilitasse a gestão de conteúdo e jogos. O sistema permite atualizações rápidas e eficientes, mantendo a plataforma sempre atualizada com novos jogos e conteúdo relevante.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solução -->
+        <section class="case-section">
+            <h2>A Solução</h2>
+            
+            <div class="case-image">
+                <img src="../../img/bannercj1.png" alt="Click Jogos Banner">
+            </div>
+            
+            <p>O redesign completo transformou a plataforma em uma experiência moderna, intuitiva e envolvente. A nova interface prioriza a descoberta de jogos e facilita o acesso, especialmente para o público infantil.</p>
+            
+            <div class="project-content" style="margin-top: var(--spacing-md);">
+                <div class="project-image">
+                    <img src="../../img/CjWeb.png" alt="Click Jogos Web">
+                </div>
+                <div class="project-text">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-color);">Interface Moderna e Intuitiva</h3>
+                    <p>O novo layout foi projetado para ser visualmente atraente e fácil de navegar. A organização dos jogos foi otimizada para facilitar a descoberta, com categorias claras e sistema de busca eficiente.</p>
+                    
+                    <p class="mt-lg">A experiência foi pensada especialmente para crianças, com cores vibrantes, ícones claros e navegação simplificada que permite que mesmo crianças menores consigam encontrar e jogar seus jogos favoritos facilmente.</p>
+                </div>
+            </div>
+            
+            <div class="project-content" style="margin-top: var(--spacing-lg);">
+                <div class="project-text">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-color);">Otimização Mobile</h3>
+                    <p>O design mobile foi especialmente otimizado com botões maiores e interface touch-friendly. Isso facilita o acesso de crianças menores, que muitas vezes usam tablets e smartphones para jogar.</p>
+                    
+                    <p class="mt-lg">A responsividade foi cuidadosamente trabalhada para garantir que a experiência seja excelente em qualquer dispositivo, mantendo a funcionalidade e a atratividade visual.</p>
+                </div>
+                <div class="project-image">
+                    <img src="../../img/CjWeb.png" alt="Click Jogos Mobile">
+                </div>
+            </div>
+            
+            <div class="project-content" style="margin-top: var(--spacing-lg);">
+                <div class="project-text">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-color);">Jogos HTML5</h3>
+                    <p>Selecionei cuidadosamente jogos em HTML5 para garantir compatibilidade universal. Isso permite que os jogos funcionem em qualquer dispositivo e navegador, sem necessidade de plugins ou instalações adicionais.</p>
+                    
+                    <p class="mt-lg">A seleção de jogos foi feita pensando na qualidade, diversão e adequação para o público infantil, garantindo uma experiência segura e envolvente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CMS -->
+        <section class="case-section">
+            <h2>Novo CMS</h2>
+            
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Gestão Simplificada</h3>
+                    <p>O novo CMS foi desenvolvido para facilitar a gestão de conteúdo e jogos. A interface administrativa é intuitiva e permite atualizações rápidas e eficientes.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>Atualizações Constantes</h3>
+                    <p>O sistema facilita a adição de novos jogos, atualização de conteúdo e gestão de categorias. Isso mantém a plataforma sempre atualizada e relevante para os usuários.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>Organização e Categorização</h3>
+                    <p>O CMS permite organizar jogos por categorias, facilitando a navegação dos usuários e a gestão do conteúdo pela equipe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resultados -->
+        <section class="case-section">
+            <h2>Resultados e Impacto</h2>
+            
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Experiência Melhorada</h3>
+                    <p>O novo site oferece uma experiência muito mais fluida e envolvente, com navegação intuitiva que permite que crianças encontrem e joguem seus jogos favoritos facilmente.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>Facilidade de Gestão</h3>
+                    <p>O CMS facilita a atualização constante de conteúdo, mantendo a plataforma sempre atualizada e relevante. A equipe pode gerenciar jogos e conteúdo de forma eficiente.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>Acessibilidade e Compatibilidade</h3>
+                    <p>A otimização mobile e a seleção de jogos HTML5 garantem que a plataforma funcione perfeitamente em qualquer dispositivo, ampliando o alcance e a acessibilidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnologias e Ferramentas -->
+        <section class="case-section">
+            <h2>Tecnologias e Ferramentas</h2>
+            <p>Para este projeto, utilizei uma variedade de ferramentas e metodologias:</p>
+            
+            <div class="project-overview">
+                <div class="overview-card">
+                    <h3>Design e Prototipagem</h3>
+                    <p>Figma para criação do design, wireframes e protótipos interativos. Desenvolvimento de interface responsiva com foco em mobile-first.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>Pesquisa e Discovery</h3>
+                    <p>Pesquisa de usuários, análise de concorrentes, estudos de usabilidade e entendimento profundo do público infantil e suas necessidades.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>Desenvolvimento</h3>
+                    <p>Desenvolvimento do novo CMS personalizado, integração de jogos HTML5 e otimização para diferentes dispositivos e navegadores.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusão -->
+        <section class="case-section">
+            <h2>Conclusão</h2>
+            <p>O projeto Click Jogos foi uma oportunidade de criar uma experiência verdadeiramente adequada para o público infantil, combinando design moderno, usabilidade e funcionalidade. O extenso trabalho de discovery permitiu entender profundamente as necessidades dos usuários, resultando em uma plataforma que realmente atende às expectativas.</p>
+            
+            <p class="mt-lg">A criação do novo CMS facilitou significativamente a gestão de conteúdo, permitindo que a plataforma se mantenha sempre atualizada e relevante. A otimização mobile e a seleção cuidadosa de jogos HTML5 garantem compatibilidade universal e uma experiência excelente em qualquer dispositivo.</p>
+            
+            <p class="mt-lg">Este projeto demonstra minha capacidade de trabalhar com públicos específicos, criar experiências adequadas para diferentes faixas etárias e desenvolver soluções que combinam design, usabilidade e funcionalidade técnica.</p>
+        </section>
+
+        <!-- Back Button -->
+        <a href="../../cases.html#click-jogos" class="btn-back">Voltar para Cases</a>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/t-cunha/" target="_blank" rel="noopener noreferrer">
+                <img src="../../img/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>thiagocbrayer@gmail.com © COPYRIGHT 2024 - cunha . portfolio</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var isOpen = menu.classList.contains("show");
+            if (isOpen) {
+                menu.classList.remove("show");
+                document.body.classList.remove("menu-open-icon");
+            } else {
+                menu.classList.add("show");
+                document.body.classList.add("menu-open-icon");
+            }
+        }
+
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu').classList.remove('show');
             });
-          </script>
-          
-           
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/csv-parser/dist/csv-parser.min.js"></script>
-        <script src="scriptcategorias.js"></script>    
-    </body>
+        });
+    </script>
+</body>
 </html>
