@@ -1,0 +1,87 @@
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#0a0a0a"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="80" fill="#1a1a1a"/>
+  <text x="500" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">Design System - Task Invest</text>
+  
+  <!-- Color Palette Section -->
+  <text x="50" y="120" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Paleta de Cores</text>
+  
+  <!-- Primary Colors -->
+  <rect x="50" y="140" width="120" height="120" fill="#0a0a0a" stroke="#333" stroke-width="2" rx="8"/>
+  <text x="110" y="280" font-family="Arial" font-size="12" fill="#888" text-anchor="middle">Primary</text>
+  <text x="110" y="295" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">#0a0a0a</text>
+  
+  <rect x="190" y="140" width="120" height="120" fill="#00d4aa" rx="8"/>
+  <text x="250" y="280" font-family="Arial" font-size="12" fill="#888" text-anchor="middle">Accent</text>
+  <text x="250" y="295" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">#00d4aa</text>
+  
+  <rect x="330" y="140" width="120" height="120" fill="#1a1a1a" stroke="#333" stroke-width="2" rx="8"/>
+  <text x="390" y="280" font-family="Arial" font-size="12" fill="#888" text-anchor="middle">Secondary</text>
+  <text x="390" y="295" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">#1a1a1a</text>
+  
+  <rect x="470" y="140" width="120" height="120" fill="#4a90e2" rx="8"/>
+  <text x="530" y="280" font-family="Arial" font-size="12" fill="#888" text-anchor="middle">Info</text>
+  <text x="530" y="295" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">#4a90e2</text>
+  
+  <rect x="610" y="140" width="120" height="120" fill="#f39c12" rx="8"/>
+  <text x="670" y="280" font-family="Arial" font-size="12" fill="#888" text-anchor="middle">Warning</text>
+  <text x="670" y="295" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">#f39c12</text>
+  
+  <rect x="750" y="140" width="120" height="120" fill="#e74c3c" rx="8"/>
+  <text x="810" y="280" font-family="Arial" font-size="12" fill="#888" text-anchor="middle">Error</text>
+  <text x="810" y="295" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">#e74c3c</text>
+  
+  <!-- Typography Section -->
+  <text x="50" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Tipografia</text>
+  
+  <text x="50" y="360" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">Heading 1</text>
+  <text x="50" y="390" font-family="Arial" font-size="12" fill="#888">32px / Bold</text>
+  
+  <text x="300" y="360" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">Heading 2</text>
+  <text x="300" y="390" font-family="Arial" font-size="12" fill="#888">24px / Bold</text>
+  
+  <text x="500" y="360" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#ffffff">Heading 3</text>
+  <text x="500" y="390" font-family="Arial" font-size="12" fill="#888">18px / Medium</text>
+  
+  <text x="650" y="360" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">Body Text</text>
+  <text x="650" y="390" font-family="Arial" font-size="12" fill="#888">16px / Regular</text>
+  
+  <!-- Components Section -->
+  <text x="50" y="430" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Componentes</text>
+  
+  <!-- Buttons -->
+  <rect x="50" y="450" width="120" height="40" fill="#00d4aa" rx="4"/>
+  <text x="110" y="475" font-family="Arial" font-size="14" fill="#0a0a0a" text-anchor="middle" font-weight="bold">Primary</text>
+  
+  <rect x="190" y="450" width="120" height="40" fill="#1a1a1a" stroke="#00d4aa" stroke-width="2" rx="4"/>
+  <text x="250" y="475" font-family="Arial" font-size="14" fill="#00d4aa" text-anchor="middle">Secondary</text>
+  
+  <rect x="330" y="450" width="120" height="40" fill="transparent" stroke="#333" stroke-width="2" rx="4"/>
+  <text x="390" y="475" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">Outline</text>
+  
+  <!-- Input Field -->
+  <rect x="470" y="450" width="200" height="40" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="4"/>
+  <text x="480" y="475" font-family="Arial" font-size="14" fill="#888">Digite o valor...</text>
+  
+  <!-- Card -->
+  <rect x="700" y="450" width="200" height="100" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="8"/>
+  <rect x="710" y="460" width="180" height="20" fill="#0a0a0a" rx="4"/>
+  <rect x="710" y="490" width="120" height="8" fill="#333" rx="4"/>
+  <rect x="710" y="505" width="150" height="8" fill="#333" rx="4"/>
+  <rect x="710" y="520" width="100" height="8" fill="#333" rx="4"/>
+  
+  <!-- Chart Components -->
+  <text x="50" y="570" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Componentes de Gráficos</text>
+  
+  <!-- Mini Chart -->
+  <rect x="300" y="550" width="150" height="40" fill="#1a1a1a" rx="4"/>
+  <polyline points="310,580 330,570 350,565 370,560 390,555 410,550 430,545" 
+            fill="none" stroke="#00d4aa" stroke-width="2"/>
+  
+  <!-- Value Display -->
+  <rect x="470" y="550" width="120" height="40" fill="#1a1a1a" rx="4"/>
+  <text x="530" y="575" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#00d4aa" text-anchor="middle">+12.5%</text>
+</svg>

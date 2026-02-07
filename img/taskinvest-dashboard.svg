@@ -1,0 +1,110 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#0a0a0a"/>
+  
+  <!-- Top Navigation -->
+  <rect x="0" y="0" width="1200" height="70" fill="#1a1a1a"/>
+  <circle cx="40" cy="35" r="18" fill="#00d4aa"/>
+  <text x="70" y="42" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Task Invest</text>
+  
+  <!-- User Info -->
+  <circle cx="1100" cy="35" r="20" fill="#00d4aa"/>
+  <text x="1100" y="41" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">👤</text>
+  
+  <!-- Main Dashboard -->
+  <rect x="40" y="100" width="1120" height="560" fill="#0f0f0f" rx="12"/>
+  
+  <!-- Portfolio Value Card -->
+  <rect x="60" y="120" width="350" height="180" fill="#1a1a1a" stroke="#00d4aa" stroke-width="2" rx="8"/>
+  <text x="70" y="150" font-family="Arial" font-size="14" fill="#888">Valor do Portfólio</text>
+  <text x="70" y="200" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#00d4aa">R$ 245.890</text>
+  <text x="70" y="230" font-family="Arial" font-size="14" fill="#00d4aa">+12.5% hoje</text>
+  <rect x="70" y="250" width="320" height="30" fill="#0f0f0f" rx="4"/>
+  <rect x="70" y="250" width="240" height="30" fill="#00d4aa" rx="4"/>
+  
+  <!-- Performance Chart -->
+  <rect x="440" y="120" width="700" height="180" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="8"/>
+  <text x="450" y="150" font-family="Arial" font-size="14" fill="#888">Performance (30 dias)</text>
+  
+  <!-- Chart Line -->
+  <polyline points="460,280 500,260 540,240 580,220 620,200 660,210 700,190 730,180 760,170 790,160 820,150 850,140 880,130 910,125 940,120 970,115 1000,110 1030,105 1060,100 1090,95 1110,90" 
+            fill="none" stroke="#00d4aa" stroke-width="3"/>
+  
+  <!-- Investment Types Grid -->
+  <text x="60" y="340" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Meus Investimentos</text>
+  
+  <!-- Stock Card -->
+  <rect x="60" y="360" width="260" height="140" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="8"/>
+  <circle cx="80" cy="385" r="15" fill="#00d4aa"/>
+  <text x="80" y="391" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">📈</text>
+  <text x="105" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Ações</text>
+  <text x="105" y="410" font-family="Arial" font-size="12" fill="#888">PETR4, VALE3, ITUB4</text>
+  <text x="80" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#00d4aa">R$ 89.450</text>
+  <text x="80" y="470" font-family="Arial" font-size="12" fill="#00d4aa">+8.2%</text>
+  
+  <!-- Fixed Income Card -->
+  <rect x="340" y="360" width="260" height="140" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="8"/>
+  <circle cx="360" cy="385" r="15" fill="#4a90e2"/>
+  <text x="360" y="391" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">💰</text>
+  <text x="385" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Renda Fixa</text>
+  <text x="385" y="410" font-family="Arial" font-size="12" fill="#888">CDB, LCI, LCA</text>
+  <text x="360" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#4a90e2">R$ 98.230</text>
+  <text x="360" y="470" font-family="Arial" font-size="12" fill="#4a90e2">+6.5%</text>
+  
+  <!-- Crypto Card -->
+  <rect x="620" y="360" width="260" height="140" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="8"/>
+  <circle cx="640" cy="385" r="15" fill="#f39c12"/>
+  <text x="640" y="391" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">₿</text>
+  <text x="665" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Criptomoedas</text>
+  <text x="665" y="410" font-family="Arial" font-size="12" fill="#888">BTC, ETH, USDT</text>
+  <text x="640" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#f39c12">R$ 58.210</text>
+  <text x="640" y="470" font-family="Arial" font-size="12" fill="#f39c12">+15.3%</text>
+  
+  <!-- Funds Card -->
+  <rect x="900" y="360" width="260" height="140" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="8"/>
+  <circle cx="920" cy="385" r="15" fill="#9b59b6"/>
+  <text x="920" y="391" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">📊</text>
+  <text x="945" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Fundos</text>
+  <text x="945" y="410" font-family="Arial" font-size="12" fill="#888">FII, Multimercado</text>
+  <text x="920" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#9b59b6">R$ 45.890</text>
+  <text x="920" y="470" font-family="Arial" font-size="12" fill="#9b59b6">+9.1%</text>
+  
+  <!-- Allocation Chart -->
+  <rect x="60" y="520" width="540" height="120" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="8"/>
+  <text x="70" y="550" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Alocação de Ativos</text>
+  
+  <!-- Pie Chart Representation -->
+  <circle cx="200" cy="600" r="40" fill="none" stroke="#00d4aa" stroke-width="20" stroke-dasharray="94 251"/>
+  <circle cx="200" cy="600" r="40" fill="none" stroke="#4a90e2" stroke-width="20" stroke-dasharray="94 251" stroke-dashoffset="-94"/>
+  <circle cx="200" cy="600" r="40" fill="none" stroke="#f39c12" stroke-width="20" stroke-dasharray="60 285" stroke-dashoffset="-188"/>
+  <circle cx="200" cy="600" r="40" fill="none" stroke="#9b59b6" stroke-width="20" stroke-dasharray="47 298" stroke-dashoffset="-248"/>
+  
+  <!-- Legend -->
+  <rect x="280" y="560" width="12" height="12" fill="#00d4aa"/>
+  <text x="300" y="571" font-family="Arial" font-size="12" fill="#888">Ações 36%</text>
+  
+  <rect x="280" y="580" width="12" height="12" fill="#4a90e2"/>
+  <text x="300" y="591" font-family="Arial" font-size="12" fill="#888">Renda Fixa 40%</text>
+  
+  <rect x="280" y="600" width="12" height="12" fill="#f39c12"/>
+  <text x="300" y="611" font-family="Arial" font-size="12" fill="#888">Crypto 24%</text>
+  
+  <rect x="280" y="620" width="12" height="12" fill="#9b59b6"/>
+  <text x="300" y="631" font-family="Arial" font-size="12" fill="#888">Fundos 19%</text>
+  
+  <!-- Recent Activity -->
+  <rect x="620" y="520" width="540" height="120" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="8"/>
+  <text x="630" y="550" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Atividades Recentes</text>
+  
+  <rect x="630" y="560" width="520" height="25" fill="#0f0f0f" rx="4"/>
+  <text x="640" y="577" font-family="Arial" font-size="12" fill="#00d4aa">Compra: PETR4 - 100 ações</text>
+  <text x="1100" y="577" font-family="Arial" font-size="10" fill="#888" text-anchor="end">há 2h</text>
+  
+  <rect x="630" y="590" width="520" height="25" fill="#0f0f0f" rx="4"/>
+  <text x="640" y="607" font-family="Arial" font-size="12" fill="#4a90e2">Aplicação: CDB 120% CDI</text>
+  <text x="1100" y="607" font-family="Arial" font-size="10" fill="#888" text-anchor="end">há 5h</text>
+  
+  <rect x="630" y="620" width="520" height="25" fill="#0f0f0f" rx="4"/>
+  <text x="640" y="637" font-family="Arial" font-size="12" fill="#f39c12">Venda: BTC - 0.05</text>
+  <text x="1100" y="637" font-family="Arial" font-size="10" fill="#888" text-anchor="end">há 1 dia</text>
+</svg>
